@@ -3,23 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV Interactif</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers ton fichier CSS -->
+    <title>CV INTERACTIF - Hugo MA</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- En-tête -->
     <header>
-        <h1>Mon CV Interactif</h1>
+        <h1 id="logo">CV INTERACTIF HUGO MA</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+            <a href="mailto:ton.email@example.com">Email</a>
+        </nav>
     </header>
-    <section id="experience">
-        <h2>Mes Expériences</h2>
-        <ul>
-            <li>Développeur Web chez XYZ</li>
-            <li>Stage en Data Science chez ABC</li>
-        </ul>
-    </section>
+
+    <!-- Menu principal -->
+    <main>
+        <section class="menu">
+            <a href="#data" class="menu-item">📊 Projets & Compétences Data</a>
+            <a href="#music" class="menu-item">🎵 Passions Musicales</a>
+            <a href="#autre" class="menu-item">🔍 Autres</a>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
     <footer>
-        <p>Contact : monemail@example.com</p>
+        <p>Contact : <a href="mailto:ton.email@example.com">ton.email@example.com</a></p>
     </footer>
-    <script src="script.js"></script> <!-- Lien vers ton fichier JavaScript -->
+
 </body>
 </html>
