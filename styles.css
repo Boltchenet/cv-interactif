@@ -7,7 +7,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    height: 100vh; /* Permet de garder la page étendue sur toute la hauteur */
+    min-height: 100vh; /* Minimum height de 100vh pour garantir que le footer soit toujours en bas */
 }
 
 /* En-tête */
@@ -34,27 +34,42 @@ header {
     color: white;
 }
 
-/* Style de la sidebar (menu déroulant) */
+/* Style de la sidebar (menu déroulant horizontal) */
 .sidebar {
     position: fixed;
-    bottom: -100%; /* Cachée par défaut en bas */
+    top: -100%; /* Cachée par défaut en haut */
     right: 0;
-    width: 250px;
-    height: 200px;
+    width: 100%;  /* Largeur de la sidebar */
+    height: 80px; /* Hauteur de la sidebar */
     background-color: #1c1c1c;
     color: white;
-    padding-top: 20px;
-    transition: transform 0.3s ease;
+    display: flex;
+    justify-content: space-around;  /* Aligner les éléments horizontalement */
+    align-items: center;
+    transition: top 0.3s ease; /* Animation pour faire défiler la sidebar de haut en bas */
     z-index: 1000;
 }
 
 .sidebar.open {
-    transform: translateY(-100%); /* Apparait en bas à droite */
+    top: 0; /* Lorsque la sidebar est ouverte, elle défile vers le bas */
 }
 
+/* Croisillon pour fermer la sidebar */
+.close-sidebar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Liste de la sidebar */
 .sidebar ul {
     list-style-type: none;
     padding: 0;
+    display: flex; /* Affichage en ligne des éléments */
+    gap: 20px;
 }
 
 .sidebar ul li {
@@ -70,6 +85,18 @@ header {
 
 .sidebar ul li a:hover {
     background-color: #444;
+}
+
+/* Overlay pour assombrir l'arrière-plan lors de l'ouverture de la sidebar */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 500;
 }
 
 /* Menu principal */
@@ -96,9 +123,9 @@ header {
 
 /* Pied de page */
 footer {
+    margin-top: auto; /* Assurer que le footer est en bas */
     padding: 20px;
     background-color: #1c1c1c;
-    margin-top: auto; /* Force le footer à aller en bas */
 }
 
 .contact-info {
@@ -144,7 +171,7 @@ footer a:hover {
     }
 
     .sidebar {
-        width: 200px;
-        height: 150px;
+        width: 100%;
+        height: 80px;
     }
 }

@@ -11,13 +11,14 @@
     <!-- En-tête -->
     <header>
         <h1 id="logo">CV INTERACTIF HUGO MA</h1>
-        <div id="hamburger" class="hamburger">
+        <div id="hamburger" class="hamburger" aria-label="Ouvrir le menu">
             ☰
         </div>
     </header>
 
     <!-- Sidebar pour hamburger (cachée par défaut) -->
     <div id="sidebar" class="sidebar">
+        <div id="close-sidebar" class="close-sidebar" aria-label="Fermer le menu">✖</div>
         <ul>
             <li><a href="#about">ABOUT ME</a></li>
             <li><a href="#data">DATA</a></li>
@@ -25,6 +26,9 @@
             <li><a href="#autre">AUTRE</a></li>
         </ul>
     </div>
+
+    <!-- Overlay pour assombrir le fond lors de l'ouverture de la sidebar -->
+    <div class="overlay"></div>
 
     <!-- Menu principal -->
     <main>
