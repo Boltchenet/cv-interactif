@@ -5,6 +5,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Permet de garder la page étendue sur toute la hauteur */
 }
 
 /* En-tête */
@@ -21,18 +24,7 @@ header {
     cursor: pointer;
 }
 
-nav a {
-    color: white;
-    margin-left: 20px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* Icône hamburger */
+/* Icône hamburger (en haut à droite) */
 .hamburger {
     font-size: 30px;
     cursor: pointer;
@@ -42,18 +34,22 @@ nav a:hover {
     color: white;
 }
 
-/* Style de la sidebar */
+/* Style de la sidebar (menu déroulant) */
 .sidebar {
     position: fixed;
-    top: 0;
-    left: -250px; /* Sidebar cachée par défaut */
+    bottom: -100%; /* Cachée par défaut en bas */
+    right: 0;
     width: 250px;
-    height: 100%;
+    height: 200px;
     background-color: #1c1c1c;
     color: white;
-    padding-top: 50px;
-    transition: 0.3s;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
     z-index: 1000;
+}
+
+.sidebar.open {
+    transform: translateY(-100%); /* Apparait en bas à droite */
 }
 
 .sidebar ul {
@@ -62,7 +58,7 @@ nav a:hover {
 }
 
 .sidebar ul li {
-    padding: 8px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -100,16 +96,55 @@ nav a:hover {
 
 /* Pied de page */
 footer {
-    margin-top: 50px;
     padding: 20px;
     background-color: #1c1c1c;
+    margin-top: auto; /* Force le footer à aller en bas */
 }
 
-/* Changer la couleur de l'email */
+.contact-info {
+    margin-bottom: 30px; /* Espace entre les infos de contact et le lien LinkedIn */
+}
+
 footer a {
     color: #ADD8E6;  /* Bleu clair */
 }
 
 footer a:hover {
     color: #87CEFA;  /* Bleu plus clair au survol */
+}
+
+/* Position du LinkedIn en bas à droite */
+#linkedin {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    color: #ADD8E6;
+    text-decoration: none;
+}
+
+#linkedin:hover {
+    color: #87CEFA;
+}
+
+/* Mise en page responsive */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        font-size: 40px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu-item {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .sidebar {
+        width: 200px;
+        height: 150px;
+    }
 }

@@ -11,24 +11,18 @@
     <!-- En-tête -->
     <header>
         <h1 id="logo">CV INTERACTIF HUGO MA</h1>
-        <nav>
-            <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank">LinkedIn</a>
-        </nav>
+        <div id="hamburger" class="hamburger">
+            ☰
+        </div>
     </header>
 
-    <!-- Icône hamburger pour ouvrir la sidebar -->
-    <div id="hamburger" class="hamburger">
-        ☰
-    </div>
-
-    <!-- Sidebar -->
+    <!-- Sidebar pour hamburger (cachée par défaut) -->
     <div id="sidebar" class="sidebar">
         <ul>
-            <li><a href="#data">Parcours Data</a></li>
-            <li><a href="#music">Parcours Musique</a></li>
-            <li><a href="#autre">Autre</a></li>
-            <li><a href="#about">À propos de moi</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
+            <li><a href="#data">DATA</a></li>
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#autre">AUTRE</a></li>
         </ul>
     </div>
 
@@ -41,10 +35,13 @@
         </section>
     </main>
 
-    <!-- Pied de page -->
+    <!-- Pied de page avec contact -->
     <footer>
-        <p>Contact : <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
-        <p>Numéro : 07.69.27.55.16</p>
+        <div class="contact-info">
+            <p>Contact : <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+            <p>Numéro : 07.69.27.55.16</p>
+        </div>
+        <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank" id="linkedin" class="linkedin">LinkedIn</a>
     </footer>
 
     <script src="script.js"></script>
