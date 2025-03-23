@@ -3,51 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive CV of Hugo MA, showcasing data projects, musical passions, and more.">
+    <meta name="keywords" content="CV, Hugo MA, Data, Music, Interactive">
     <title>CV INTERACTIF - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-    <!-- En-tête -->
+    <!-- Header -->
     <header>
-        <h1 id="logo">CV INTERACTIF HUGO MA</h1>
-        <div id="hamburger" class="hamburger" aria-label="Ouvrir le menu">
-            ☰
-        </div>
+        <h1 id="logo">HUGO MA</h1>
+        <nav>
+            <ul>
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Sidebar pour hamburger (cachée par défaut) -->
-    <div id="sidebar" class="sidebar">
-        <div id="close-sidebar" class="close-sidebar" aria-label="Fermer le menu">✖</div>
-        <ul>
-            <li><a href="#about">ABOUT ME</a></li>
-            <li><a href="#data">DATA</a></li>
-            <li><a href="#music">MUSIC</a></li>
-            <li><a href="#autre">AUTRE</a></li>
-        </ul>
-    </div>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Welcome to My Interactive CV</h2>
+            <p>Data Enthusiast | Music Lover | Creative Thinker</p>
+            <a href="#categories" class="cta-button">Explore More</a>
+        </div>
+    </section>
 
-    <!-- Overlay pour assombrir le fond lors de l'ouverture de la sidebar -->
-    <div class="overlay"></div>
+    <!-- Categories Section -->
+    <section id="categories">
+        <h2>Categories</h2>
+        <div class="card-container">
+            <!-- Data Card -->
+            <div class="card" id="data-card">
+                <h3>Data</h3>
+                <div class="sub-categories">
+                    <div class="sub-category">
+                        <h4>Portfolio</h4>
+                        <p>Explore my data projects and skills.</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4>Projects</h4>
+                        <p>Discover my latest data projects.</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4>Software</h4>
+                        <p>Tools and software I use.</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4>Languages</h4>
+                        <p>Programming languages I know.</p>
+                    </div>
+                </div>
+                <a href="data.html" class="cta-button">Learn More</a>
+            </div>
 
-    <!-- Menu principal -->
-    <main>
-        <section class="menu">
-            <a href="#data" class="menu-item">📊 Projets & Compétences Data</a>
-            <a href="#music" class="menu-item">🎵 Passions Musicales</a>
-            <a href="#autre" class="menu-item">🔍 Autres</a>
-        </section>
-    </main>
+            <!-- Music Card -->
+            <div class="card" id="music-card">
+                <h3>Music</h3>
+                <div class="sub-categories">
+                    <div class="sub-category">
+                        <h4>Musical Journey</h4>
+                        <p>My journey in music.</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4>Competitions</h4>
+                        <p>Competitions I've participated in.</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4>Skills</h4>
+                        <p>Music-related skills.</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4>Portfolio</h4>
+                        <p>My music projects.</p>
+                    </div>
+                </div>
+                <a href="music.html" class="cta-button">Learn More</a>
+            </div>
 
-    <!-- Pied de page avec contact -->
+            <!-- Other Card -->
+            <div class="card" id="other-card">
+                <h3>Other</h3>
+                <div class="sub-categories">
+                    <div class="sub-category">
+                        <h4>Author</h4>
+                        <p>More about me.</p>
+                    </div>
+                </div>
+                <a href="other.html" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
         <div class="contact-info">
-            <p>Contact : <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
-            <p>Numéro : 07.69.27.55.16</p>
+            <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+            <p>Phone: 07.69.27.55.16</p>
         </div>
-        <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank" id="linkedin" class="linkedin">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank" id="linkedin">LinkedIn</a>
     </footer>
 
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>

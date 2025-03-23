@@ -1,177 +1,187 @@
-/* Général */
+/* General */
 body {
-    background-color: #121212; /* Noir éclatant */
-    color: #ffffff; /* Texte blanc */
-    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
     margin: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Minimum height de 100vh pour garantir que le footer soit toujours en bas */
+    line-height: 1.6;
 }
 
-/* En-tête */
+/* Smooth Scroll Animation */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1c1c1c; /* Noir un peu plus clair */
-}
-
-#logo {
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-/* Icône hamburger (en haut à droite) */
-.hamburger {
-    font-size: 30px;
-    cursor: pointer;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    color: white;
-}
-
-/* Style de la sidebar (menu déroulant horizontal) */
-.sidebar {
-    position: fixed;
-    top: -100%; /* Cachée par défaut en haut */
-    right: 0;
-    width: 100%;  /* Largeur de la sidebar */
-    height: 80px; /* Hauteur de la sidebar */
     background-color: #1c1c1c;
-    color: white;
-    display: flex;
-    justify-content: space-around;  /* Aligner les éléments horizontalement */
-    align-items: center;
-    transition: top 0.3s ease; /* Animation pour faire défiler la sidebar de haut en bas */
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 
-.sidebar.open {
-    top: 0; /* Lorsque la sidebar est ouverte, elle défile vers le bas */
+header h1 {
+    font-size: 1.5em;
+    margin: 0;
 }
 
-/* Croisillon pour fermer la sidebar */
-.close-sidebar {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-}
-
-/* Liste de la sidebar */
-.sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex; /* Affichage en ligne des éléments */
-    gap: 20px;
-}
-
-.sidebar ul li {
-    padding: 10px;
-    text-align: center;
-}
-
-.sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.sidebar ul li a:hover {
-    background-color: #444;
-}
-
-/* Overlay pour assombrir l'arrière-plan lors de l'ouverture de la sidebar */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    z-index: 500;
-}
-
-/* Menu principal */
-.menu {
+nav ul {
+    list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
-    margin-top: 50px;
+    margin: 0;
+    padding: 0;
 }
 
-.menu-item {
-    background-color: #222;
-    padding: 15px 25px;
-    border-radius: 10px;
-    color: white;
+nav ul li a {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1.2em;
-    transition: 0.3s;
+    font-size: 1.1em;
+    transition: color 0.3s;
 }
 
-.menu-item:hover {
-    background-color: #444;
-}
-
-/* Pied de page */
-footer {
-    margin-top: auto; /* Assurer que le footer est en bas */
-    padding: 20px;
-    background-color: #1c1c1c;
-}
-
-.contact-info {
-    margin-bottom: 30px; /* Espace entre les infos de contact et le lien LinkedIn */
-}
-
-footer a {
-    color: #ADD8E6;  /* Bleu clair */
-}
-
-footer a:hover {
-    color: #87CEFA;  /* Bleu plus clair au survol */
-}
-
-/* Position du LinkedIn en bas à droite */
-#linkedin {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    font-size: 18px;
-    color: #ADD8E6;
-    text-decoration: none;
-}
-
-#linkedin:hover {
+nav ul li a:hover {
     color: #87CEFA;
 }
 
-/* Mise en page responsive */
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+.hero-content h2 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 10px 0 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #87CEFA;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ADD8E6;
+}
+
+/* Categories Section */
+#categories {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('OUAIS.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.sub-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.sub-category {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.sub-category h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #87CEFA;
+}
+
+.sub-category p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+
+.cta-button {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #87CEFA;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ADD8E6;
+}
+
+/* Responsive Design */
 @media screen and (max-width: 768px) {
-    .hamburger {
-        font-size: 40px;
-    }
-
-    .menu {
+    .card-container {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
     }
 
-    .menu-item {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-
-    .sidebar {
-        width: 100%;
-        height: 80px;
+    .card {
+        width: 80%;
     }
 }
