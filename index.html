@@ -3,60 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Univers - Hugo MA</title>
+    <title>CV INTERACTIF - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- En-tête -->
     <header>
-        <h1 id="logo">Hugo MA - Portfolio</h1>
+        <h1 id="logo">CV INTERACTIF HUGO MA</h1>
         <nav>
             <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank">LinkedIn</a>
-            <div id="hamburger" onclick="toggleSidebar()">☰</div>
         </nav>
     </header>
 
-    <!-- Sidebar (Toolbar) -->
-    <div id="sidebar">
+    <!-- Icône hamburger pour ouvrir la sidebar -->
+    <div id="hamburger" class="hamburger">
+        ☰
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
         <ul>
+            <li><a href="#data">Parcours Data</a></li>
+            <li><a href="#music">Parcours Musique</a></li>
+            <li><a href="#autre">Autre</a></li>
             <li><a href="#about">À propos de moi</a></li>
-            <li><a href="#education">Parcours scolaire</a></li>
-            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-        <p>Contact : 07.69.27.55.16</p>
     </div>
 
     <!-- Menu principal -->
     <main>
         <section class="menu">
-            <div class="category" id="data">
-                <h2>📊 Projets & Compétences Data</h2>
-                <ul>
-                    <li>Portfolio</li>
-                    <li>Logiciels</li>
-                    <li>Projets</li>
-                </ul>
-            </div>
-
-            <div class="category" id="music">
-                <h2>🎵 Passions Musicales</h2>
-                <ul>
-                    <li>Parcours</li>
-                    <li>Créations</li>
-                </ul>
-            </div>
-
-            <div class="category" id="other">
-                <h2>🔍 Autres</h2>
-                <!-- Contenu à venir -->
-            </div>
+            <a href="#data" class="menu-item">📊 Projets & Compétences Data</a>
+            <a href="#music" class="menu-item">🎵 Passions Musicales</a>
+            <a href="#autre" class="menu-item">🔍 Autres</a>
         </section>
     </main>
 
     <!-- Pied de page -->
     <footer>
-        <p>Contact : <a href="tel:+33769275516">07.69.27.55.16</a></p>
+        <p>Contact : <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+        <p>Numéro : 07.69.27.55.16</p>
     </footer>
 
     <script src="script.js"></script>
