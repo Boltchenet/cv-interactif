@@ -104,3 +104,12 @@ footer {
     padding: 20px;
     background-color: #1c1c1c;
 }
+
+/* Changer la couleur de l'email */
+footer a {
+    color: #ADD8E6;  /* Bleu clair */
+}
+
+footer a:hover {
+    color: #87CEFA;  /* Bleu plus clair au survol */
+}
