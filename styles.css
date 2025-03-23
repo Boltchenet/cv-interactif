@@ -94,7 +94,7 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('OUAIS.JPG');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('ouais.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -184,4 +184,41 @@ footer a:hover {
     .card {
         width: 80%;
     }
+}
+
+/* Data Page Specific Styles */
+body.data-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('solaire.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixe l'image de fond */
+}
+
+#languages, #software, #statistics {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#languages .card, #software .card, #statistics .card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 800px; /* Limite la largeur des cartes */
+    margin: 0 auto; /* Centre les cartes */
+}
+
+#languages .card h3, #software .card h3, #statistics .card h3 {
+    color: #87CEFA;
+    margin-bottom: 10px;
+}
+
+#languages .card ul, #software .card ul, #statistics .card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+#languages .card ul li, #software .card ul li, #statistics .card ul li {
+    margin-bottom: 10px;
 }
