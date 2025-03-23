@@ -1,10 +1,12 @@
-/* General */
+/* General Styles */
 body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: #121212;
     color: #ffffff;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
     line-height: 1.6;
+    font-size: 1.1em; /* Police légèrement plus grande */
 }
 
 /* Smooth Scroll Animation */
@@ -156,18 +158,21 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    padding: 20px;
+    padding: 10px 20px; /* Padding réduit pour diminuer la hauteur */
     background-color: #1c1c1c;
     text-align: center;
+    margin-top: auto; /* Pour coller le footer en bas */
+    font-size: 0.95em; /* Police légèrement plus grande */
 }
 
 .contact-info {
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Espace réduit entre les éléments */
 }
 
 footer a {
     color: #87CEFA;
     text-decoration: none;
+    font-size: 0.95em; /* Police légèrement plus grande */
 }
 
 footer a:hover {
@@ -184,6 +189,11 @@ footer a:hover {
     .card {
         width: 80%;
     }
+
+    footer {
+        padding: 8px 15px; /* Encore moins de padding sur mobile */
+        font-size: 0.9em; /* Police légèrement plus petite sur mobile */
+    }
 }
 
 /* Data Page Specific Styles */
@@ -194,31 +204,154 @@ body.data-page {
     background-attachment: fixed; /* Fixe l'image de fond */
 }
 
-#languages, #software, #statistics {
-    padding: 50px 20px;
+/* Two-Column Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px; /* Espace autour des colonnes */
+    max-width: 1200px; /* Largeur totale réduite pour éviter l'étalement */
+    margin: 0 auto; /* Centre le contenu */
+    gap: 60px; /* Plus d'espace entre les colonnes */
+}
+
+.left-column {
+    width: 40%; /* Colonne de gauche plus étroite */
+}
+
+.right-column {
+    width: 50%; /* Colonne de droite plus large */
+}
+
+/* Titre des projets */
+.projects-title {
+    color: #87CEFA;
+    font-size: 2em;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-#languages .card, #software .card, #statistics .card {
+/* Cards */
+.card {
     background-color: #222;
-    padding: 20px;
+    padding: 25px; /* Padding réduit pour moins de serrage */
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Espace entre les bulles réduit */
     text-align: left;
-    max-width: 800px; /* Limite la largeur des cartes */
-    margin: 0 auto; /* Centre les cartes */
+    width: 100%; /* Les bulles prennent toute la largeur de leur colonne */
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-#languages .card h3, #software .card h3, #statistics .card h3 {
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
     color: #87CEFA;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Espace sous le titre réduit */
+    font-size: 1.4em; /* Titre légèrement plus petit */
 }
 
-#languages .card ul, #software .card ul, #statistics .card ul {
+.card p {
+    font-size: 1em; /* Texte légèrement plus petit */
+    line-height: 1.6; /* Meilleure lisibilité */
+    margin-bottom: 15px; /* Espace sous le texte réduit */
+}
+
+.card ul {
     list-style-type: disc;
     padding-left: 20px;
+    margin-bottom: 15px; /* Espace sous la liste réduit */
 }
 
-#languages .card ul li, #software .card ul li, #statistics .card ul li {
-    margin-bottom: 10px;
+.card ul li {
+    margin-bottom: 8px; /* Espace entre les éléments de la liste réduit */
+    font-size: 1em; /* Texte légèrement plus petit */
+}
+
+.cta-button {
+    padding: 10px 20px; /* Bouton légèrement plus petit */
+    background-color: #87CEFA;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1em; /* Texte du bouton légèrement plus petit */
+    display: inline-block; /* Pour éviter les problèmes d'alignement */
+}
+
+.cta-button:hover {
+    background-color: #ADD8E6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px; /* Moins de padding sur mobile */
+        gap: 20px; /* Moins d'espace entre les colonnes sur mobile */
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .card {
+        padding: 20px; /* Moins de padding sur mobile */
+    }
+}
+
+/* About Page Specific Styles */
+body.about-page {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('AboutMe.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Fixe l'image de fond */
+    min-height: 100vh; /* Assure que la page prend toute la hauteur de l'écran */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pour coller le footer en bas */
+}
+
+/* About Me Section */
+#about {
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1; /* Pour que la section prenne l'espace disponible */
+}
+
+#about h2 {
+    font-size: 2.5em;
+    color: #87CEFA;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    background-color: rgba(34, 34, 34, 0.8); /* Fond semi-transparent pour le texte */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 30px 10px;
+    }
+
+    .about-content {
+        padding: 15px;
+    }
+
+    .about-text p {
+        font-size: 1em;
+    }
 }
