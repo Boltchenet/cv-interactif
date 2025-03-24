@@ -7,11 +7,14 @@
     <meta name="keywords" content="CV, Hugo MA, Data, Music, Interactive">
     <title>CV INTERACTIF - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <h1 id="logo">HUGO MA</h1>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1 id="logo">HUGO MA</h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="about.html">About Me</a></li>
@@ -24,72 +27,97 @@
         <div class="hero-content">
             <h2>Welcome to My Interactive CV</h2>
             <p>Data Enthusiast | Music Lover | Creative Thinker</p>
-            <a href="#categories" class="cta-button">Explore More</a>
+            <a href="#categories" class="cta-button pulse">Explore More <i class="fas fa-chevron-down"></i></a>
         </div>
     </section>
 
     <!-- Categories Section -->
     <section id="categories">
-        <h2>Categories</h2>
+        <div class="categories-header">
+            <h2>Explore My Universe</h2>
+            <p class="subtitle">Discover my different areas of expertise</p>
+        </div>
+        
         <div class="card-container">
             <!-- Data Card -->
             <div class="card" id="data-card">
-                <h3>Data</h3>
+                <div class="card-icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h3>Data Science</h3>
                 <div class="sub-categories">
                     <div class="sub-category">
-                        <h4>Languages</h4>
-                        <p>Programming languages I know.</p>
+                        <h4><i class="fas fa-code"></i> Languages</h4>
+                        <p>Python, R, SQL and more</p>
                     </div>
                     <div class="sub-category">
-                        <h4>Software</h4>
-                        <p>Tools and software I use.</p>
+                        <h4><i class="fas fa-laptop"></i> Software</h4>
+                        <p>Tools and software I use</p>
                     </div>
                     <div class="sub-category">
-                        <h4>Statistics</h4>
-                        <p>My statistical skills.</p>
+                        <h4><i class="fas fa-chart-line"></i> Statistics</h4>
+                        <p>My statistical skills</p>
                     </div>
                     <div class="sub-category">
-                        <h4>Projects</h4>
-                        <p>Explore my data projects.</p>
+                        <h4><i class="fas fa-project-diagram"></i> Projects</h4>
+                        <p>Explore my data projects</p>
                     </div>
                 </div>
-                <a href="data.html" class="cta-button">Learn More</a>
+                <a href="data.html" class="cta-button pulse">View Projects <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <!-- Music Card -->
             <div class="card" id="music-card">
-                <h3>Music</h3>
+                <div class="card-icon">
+                    <i class="fas fa-music"></i>
+                </div>
+                <h3>Musical World</h3>
                 <div class="sub-categories">
                     <div class="sub-category">
-                        <h4>Musical Journey</h4>
-                        <p>My journey in music.</p>
+                        <h4><i class="fas fa-road"></i> Journey</h4>
+                        <p>My musical evolution</p>
                     </div>
                     <div class="sub-category">
-                        <h4>Competitions</h4>
-                        <p>Competitions I've participated in.</p>
+                        <h4><i class="fas fa-trophy"></i> Competitions</h4>
+                        <p>My performances</p>
                     </div>
                     <div class="sub-category">
-                        <h4>Skills</h4>
-                        <p>Music-related skills.</p>
+                        <h4><i class="fas fa-guitar"></i> Skills</h4>
+                        <p>Instruments mastered</p>
                     </div>
                     <div class="sub-category">
-                        <h4>Portfolio</h4>
-                        <p>My music projects.</p>
+                        <h4><i class="fas fa-headphones"></i> Portfolio</h4>
+                        <p>Listen to my work</p>
                     </div>
                 </div>
-                <a href="music.html" class="cta-button">Learn More</a>
+                <a href="music.html" class="cta-button pulse">Discover More <i class="fas fa-arrow-right"></i></a>
             </div>
 
             <!-- Other Card -->
             <div class="card" id="other-card">
-                <h3>Other</h3>
+                <div class="card-icon">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <h3>Other Passions</h3>
                 <div class="sub-categories">
                     <div class="sub-category">
-                        <h4>Author</h4>
-                        <p>More about me.</p>
+                        <h4><i class="fas fa-book-open"></i> Author</h4>
+                        <p>My writing projects</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-gamepad"></i> Gaming</h4>
+                        <p>My gaming universe</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-plane"></i> Travel</h4>
+                        <p>My adventures</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-lightbulb"></i> Ideas</h4>
+                        <p>Creative concepts</p>
                     </div>
                 </div>
-                <a href="other.html" class="cta-button">Learn More</a>
+                <a href="other.html" class="cta-button pulse">See More <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     </section>
@@ -100,7 +128,9 @@
             <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
             <p>Phone: 07.69.27.55.16</p>
         </div>
-        <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank" id="linkedin">LinkedIn</a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
     <!-- Script -->

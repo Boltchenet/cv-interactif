@@ -1,36 +1,122 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musical Passions - Hugo MA</title>
+    <title>Musical World - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="music-page">
+    <!-- Header -->
     <header>
-        <h1 id="logo">HUGO MA</h1>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1 id="logo">HUGO MA</h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
     </header>
 
+    <!-- Main Content -->
     <main>
         <section id="music">
-            <h2>Musical Passions</h2>
-            <p>Here are some of my musical interests...</p>
+            <div class="music-header">
+                <h2><i class="fas fa-music"></i> My Piano Journey</h2>
+                <div class="piano-keys"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2009 - Piano Beginnings</h3>
+                        <p>Started learning at age 6 with private teacher Mrs Liu</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2015 - Steinway Competition</h3>
+                        <p>Participated in prestigious piano competitions</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2021 - Cycle 3 Completion</h3>
+                        <p>Reached advanced level before pursuing other paths</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>2023 - Composition Era</h3>
+                        <p>Transitioned to music composition using FL Studio</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="music-skills">
+                <!-- Style -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background-color: #ff6b6b;">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Romantic Style</h3>
+                    <p>Specializing in emotional and expressive pieces</p>
+                </div>
+
+                <!-- Anime -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background-color: #4ecdc4;">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3>Anime Music</h3>
+                    <p>Adapting Japanese anime soundtracks</p>
+                </div>
+
+                <!-- Composition -->
+                <div class="skill-card">
+                    <div class="skill-icon" style="background-color: #ff9f1c;">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h3>Composition</h3>
+                    <p>Creating original music with FL Studio</p>
+                </div>
+            </div>
+
+            <div class="current-projects">
+                <h3><i class="fas fa-star"></i> Current Focus</h3>
+                <p>Developing original compositions blending:</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Romantic harmonies</li>
+                    <li><i class="fas fa-check"></i> Cinematic atmospheres</li>
+                    <li><i class="fas fa-check"></i> Anime influences</li>
+                </ul>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="contact-info">
             <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
             <p>Phone: 07.69.27.55.16</p>
         </div>
-        <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank" id="linkedin">LinkedIn</a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>

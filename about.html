@@ -5,11 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="about-page">
     <!-- Header -->
     <header>
-        <h1 id="logo">HUGO MA</h1>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1 id="logo">HUGO MA</h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,24 +22,55 @@
 
     <!-- Main Content -->
     <main>
-        <!-- About Me Section -->
         <section id="about">
-            <h2>About Me</h2>
+            <div class="about-header">
+                <h2>About Me</h2>
+                <div class="title-decoration"></div>
+            </div>
+            
             <div class="about-content">
+                <div class="profile-section">
+                    <div class="profile-image"></div> <!-- Image ajoutée via CSS -->
+                    <div class="profile-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-graduation-cap"></i>
+                            <p>BUT Data Science</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-code"></i>
+                            <p>Python | R | SQL</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-music"></i>
+                            <p>Musician</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="about-text">
-                    <p>
-                        Hi, I'm Hugo MA, a first-year student in the Bachelor of Technology (B.U.T.) in Data Science. 
-                        This is my personal website, where I showcase my skills, projects, and profile.
-                    </p>
-                    <p>
-                        The purpose of this site is to show you how Artificial Intelligence plays a crucial role in the lives of students today. 
-                        We use it extensively, and I wanted to demonstrate that someone like me, who has never worked with HTML, Java, or CSS, 
-                        and has just started learning Python, can create a website thanks to tools like ChatGPT and DeepSeek.
-                    </p>
-                    <p>
-                        Yes, everything here was made with their help. I wanted to show that I am also capable of learning with these new technological tools, 
-                        and I believe they are essential today for students and citizens alike.
-                    </p>
+                    <div class="text-block">
+                        <h3><i class="fas fa-user"></i> Who I Am</h3>
+                        <p>
+                            Hi, I'm Hugo MA, a first-year student in the Bachelor of Technology (B.U.T.) in Data Science. 
+                            Passionate about data analysis and creative problem-solving.
+                        </p>
+                    </div>
+                    
+                    <div class="text-block">
+                        <h3><i class="fas fa-lightbulb"></i> My Vision</h3>
+                        <p>
+                            This website showcases how AI tools can empower beginners to create professional projects.
+                            Built with ChatGPT and DeepSeek, it's proof that technology can accelerate learning.
+                        </p>
+                    </div>
+                    
+                    <div class="text-block">
+                        <h3><i class="fas fa-rocket"></i> My Goals</h3>
+                        <p>
+                            Combine data skills with creative thinking to develop innovative solutions.
+                            Continuously learn and adapt to new technologies in our fast-evolving digital world.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -48,10 +82,11 @@
             <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
             <p>Phone: 07.69.27.55.16</p>
         </div>
-        <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank" id="linkedin">LinkedIn</a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
-    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>

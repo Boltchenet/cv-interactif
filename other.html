@@ -3,34 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other Interests - Hugo MA</title>
+    <title>Other Passions - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="other-page">
+    <!-- Header -->
     <header>
-        <h1 id="logo">HUGO MA</h1>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1 id="logo">HUGO MA</h1>
+        </a>
         <nav>
             <ul>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
-        <button id="theme-toggle" aria-label="Toggle theme">🌓</button>
     </header>
 
+    <!-- Main Content -->
     <main>
         <section id="other">
-            <h2>Other Interests</h2>
-            <p>Here are some of my other interests...</p>
+            <div class="section-header">
+                <h2><i class="fas fa-user-astronaut"></i> Beyond Data & Music</h2>
+                <p class="subtitle">My other worlds of passion and creativity</p>
+            </div>
+
+            <!-- Basketball Section -->
+            <div class="passion-card">
+                <div class="passion-icon" style="background-color: #e74c3c;">
+                    <i class="fas fa-basketball-ball"></i>
+                </div>
+                <div class="passion-content">
+                    <h3>Streetball Player</h3>
+                    <p>5 years of urban basketball — agility, teamwork, and improvisation are my game. Regular player on Paris courts with a competitive mindset.</p>
+                    <div class="tags">
+                        <span class="tag">Pick-up games</span>
+                        <span class="tag">Paris spots</span>
+                        <span class="tag">Competitive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gaming Section -->
+            <div class="passion-card">
+                <div class="passion-icon" style="background-color: #3498db;">
+                    <i class="fas fa-gamepad"></i>
+                </div>
+                <div class="passion-content">
+                    <h3>Competitive Gamer</h3>
+                    <p>Strategy and reflexes honed through esports titles — where analytics meet adrenaline. Focused on ranked play and team coordination.</p>
+                    <div class="tags">
+                        <span class="tag">MOBAs</span>
+                        <span class="tag">FPS</span>
+                        <span class="tag">Leaderboards</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Travel Section -->
+            <div class="passion-card">
+                <div class="passion-icon" style="background-color: #f39c12;">
+                    <i class="fas fa-plane"></i>
+                </div>
+                <div class="passion-content">
+                    <h3>Global Explorer</h3>
+                    <p>From New York's skyscrapers to China's ancient ruins — collecting cultural perspectives across continents. Next destination: Japan.</p>
+                    <div class="tags">
+                        <span class="tag">USA</span>
+                        <span class="tag">China</span>
+                        <span class="tag">Europe</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- User Testing Section -->
+            <div class="passion-card">
+                <div class="passion-icon" style="background-color: #2ecc71;">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <div class="passion-content">
+                    <h3>UX Contributor</h3>
+                    <p>Approved tester on UserTesting — shaping digital experiences through rigorous analysis. Bridging tech and human-centered design.</p>
+                    <div class="tags">
+                        <span class="tag">UserTesting</span>
+                        <span class="tag">QA</span>
+                        <span class="tag">Feedback</span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="contact-info">
             <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
             <p>Phone: 07.69.27.55.16</p>
         </div>
-        <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank" id="linkedin">LinkedIn</a>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 
     <script src="script.js"></script>
