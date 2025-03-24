@@ -303,7 +303,7 @@ body.data-page {
 
 /* About Page Specific Styles */
 body.about-page {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('AboutMe.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('aboutme.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Fixe l'image de fond */
