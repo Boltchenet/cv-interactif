@@ -1200,3 +1200,40 @@ body.other-page {
 body:lang(cn) {
     font-family: 'Arial', 'Microsoft YaHei', sans-serif;
 }
+
+/* ================ MOBILE BACKUP (SAFE) ================ */
+/* Ne s'applique QUE si l'écran est ≤ 768px */
+@media (max-width: 768px) {
+  /* Force le header à s'empiler sans changer son style desktop */
+  header {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  /* Rend les cartes full-width mais garde leurs animations */
+  .card {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  /* Agrandit les boutons tactiles */
+  .cta-button, .lang-btn {
+    min-width: 44px;
+    min-height: 44px;
+  }
+}
+
+/* Correction safe pour très petits écrans (≤ 480px) */
+@media (max-width: 480px) {
+  /* Réduit la taille du texte hero */
+  .hero-content h2 {
+    font-size: 2em !important;
+    line-height: 1.3;
+  }
+
+  /* Optimise l'espacement des cartes */
+  .card-container {
+    gap: 20px !important;
+    padding: 0 10px !important;
+  }
+}
