@@ -1165,3 +1165,38 @@ body.other-page {
         font-size: 0.75em;
     }
 }
+
+/* Language Switcher */
+.language-switcher {
+    display: flex;
+    gap: 10px;
+    margin-left: 30px;
+}
+
+.lang-btn {
+    background: transparent;
+    color: #87CEFA;
+    border: 1px solid rgba(135, 206, 250, 0.3);
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+    min-width: 40px;
+}
+
+.lang-btn:hover, .lang-btn.active {
+    background: rgba(135, 206, 250, 0.2);
+    color: #ADD8E6;
+}
+
+.lang-btn.active {
+    border-color: #87CEFA;
+    transform: translateY(-2px);
+}
+
+/* Chinese font fallback */
+body:lang(cn) {
+    font-family: 'Arial', 'Microsoft YaHei', sans-serif;
+}

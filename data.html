@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Projects - Hugo MA</title>
+    <title data-i18n="titles.data">Data Projects - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,17 +15,22 @@
         </a>
         <nav>
             <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" data-i18n="common.about">About Me</a></li>
+                <li><a href="index.html" data-i18n="common.home">Home</a></li>
             </ul>
         </nav>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="cn">中文</button>
+        </div>
     </header>
 
     <!-- Main Content -->
     <div class="container">
         <!-- Left Column: Skills -->
         <div class="left-column">
-            <h2 class="skills-title">My Skills</h2>
+            <h2 class="skills-title" data-i18n="data.skills_title">My Skills</h2>
             
             <div class="skills-grid">
                 <!-- Languages Section -->
@@ -33,11 +38,11 @@
                     <div class="card-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h3>Languages</h3>
+                    <h3 data-i18n="data.skills.languages">Languages</h3>
                     <ul>
-                        <li><strong>Python:</strong> Data analysis</li>
-                        <li><strong>R:</strong> Statistical analysis</li>
-                        <li><strong>SQL:</strong> Database queries</li>
+                        <li><strong data-i18n="data.skills.python">Python:</strong> <span data-i18n="data.skills.python_desc">Data analysis</span></li>
+                        <li><strong data-i18n="data.skills.r">R:</strong> <span data-i18n="data.skills.r_desc">Statistical analysis</span></li>
+                        <li><strong data-i18n="data.skills.sql">SQL:</strong> <span data-i18n="data.skills.sql_desc">Database queries</span></li>
                     </ul>
                 </div>
 
@@ -46,11 +51,11 @@
                     <div class="card-icon">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3>Software</h3>
+                    <h3 data-i18n="data.skills.software">Software</h3>
                     <ul>
-                        <li><strong>Excel:</strong> Advanced functions</li>
-                        <li><strong>Power BI:</strong> Dashboards</li>
-                        <li><strong>Access:</strong> Databases</li>
+                        <li><strong data-i18n="data.skills.excel">Excel:</strong> <span data-i18n="data.skills.excel_desc">Advanced functions</span></li>
+                        <li><strong data-i18n="data.skills.powerbi">Power BI:</strong> <span data-i18n="data.skills.powerbi_desc">Dashboards</span></li>
+                        <li><strong data-i18n="data.skills.access">Access:</strong> <span data-i18n="data.skills.access_desc">Databases</span></li>
                     </ul>
                 </div>
 
@@ -59,11 +64,11 @@
                     <div class="card-icon">
                         <i class="fas fa-chart-bar"></i>
                     </div>
-                    <h3>Statistics</h3>
+                    <h3 data-i18n="data.skills.stats">Statistics</h3>
                     <ul>
-                        <li>Descriptive stats</li>
-                        <li>Inferential stats</li>
-                        <li>Data cleaning</li>
+                        <li data-i18n="data.skills.stats1">Descriptive stats</li>
+                        <li data-i18n="data.skills.stats2">Inferential stats</li>
+                        <li data-i18n="data.skills.stats3">Data cleaning</li>
                     </ul>
                 </div>
 
@@ -72,11 +77,11 @@
                     <div class="card-icon">
                         <i class="fas fa-flask"></i>
                     </div>
-                    <h3>Methods</h3>
+                    <h3 data-i18n="data.skills.methods">Methods</h3>
                     <ul>
-                        <li>Data visualization</li>
-                        <li>Machine Learning</li>
-                        <li>Survey analysis</li>
+                        <li data-i18n="data.skills.methods1">Data visualization</li>
+                        <li data-i18n="data.skills.methods2">Machine Learning</li>
+                        <li data-i18n="data.skills.methods3">Survey analysis</li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +89,7 @@
 
         <!-- Right Column: Projects -->
         <div class="right-column">
-            <h2 class="projects-title">My Projects</h2>
+            <h2 class="projects-title" data-i18n="data.projects_title">My Projects</h2>
             
             <div class="projects-grid">
                 <!-- Project 1 -->
@@ -92,9 +97,9 @@
                     <div class="card-icon">
                         <i class="fas fa-music"></i>
                     </div>
-                    <h3>Music Evolution</h3>
-                    <p>Analysis from 1960 to today</p>
-                    <a href="Beige and Brown MInimalist Psychology Thesis Defense Presentation.pdf" target="_blank" class="cta-button">View</a>
+                    <h3 data-i18n="data.projects.music.title">Music Evolution</h3>
+                    <p data-i18n="data.projects.music.desc">Analysis from 1960 to today</p>
+                    <a href="Beige and Brown MInimalist Psychology Thesis Defense Presentation.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
                 </div>
 
                 <!-- Project 2 -->
@@ -102,9 +107,9 @@
                     <div class="card-icon">
                         <i class="fas fa-network-wired"></i>
                     </div>
-                    <h3>Social Networks</h3>
-                    <p>Regulation impact study</p>
-                    <a href="Présentation Basique et Simple Gouttes Pastel.pdf" target="_blank" class="cta-button">View</a>
+                    <h3 data-i18n="data.projects.social.title">Social Networks</h3>
+                    <p data-i18n="data.projects.social.desc">Regulation impact study</p>
+                    <a href="Présentation Basique et Simple Gouttes Pastel.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
                 </div>
 
                 <!-- Project 3 -->
@@ -112,9 +117,9 @@
                     <div class="card-icon">
                         <i class="fas fa-smile"></i>
                     </div>
-                    <h3>Happiness</h3>
-                    <p>Global trends analysis</p>
-                    <a href="PPT_SAE_Projet_21032025.pdf" target="_blank" class="cta-button">View</a>
+                    <h3 data-i18n="data.projects.happiness.title">Happiness</h3>
+                    <p data-i18n="data.projects.happiness.desc">Global trends analysis</p>
+                    <a href="PPT_SAE_Projet_21032025.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
                 </div>
 
                 <!-- Project 4 -->
@@ -122,9 +127,9 @@
                     <div class="card-icon">
                         <i class="fas fa-poll"></i>
                     </div>
-                    <h3>Cultural Survey</h3>
-                    <p>Students habits investigation</p>
-                    <a href="SAE Enquête.pdf" target="_blank" class="cta-button">View</a>
+                    <h3 data-i18n="data.projects.survey.title">Cultural Survey</h3>
+                    <p data-i18n="data.projects.survey.desc">Students habits investigation</p>
+                    <a href="SAE Enquête.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
                 </div>
             </div>
         </div>
@@ -133,14 +138,15 @@
     <!-- Footer -->
     <footer>
         <div class="contact-info">
-            <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
-            <p>Phone: 07.69.27.55.16</p>
+            <p><span data-i18n="footer.contact">Contact</span>: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+            <p><span data-i18n="footer.phone">Phone</span>: 07.69.27.55.16</p>
         </div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

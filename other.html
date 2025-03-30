@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Other Passions - Hugo MA</title>
+    <title data-i18n="titles.other">Other Passions - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,18 +15,23 @@
         </a>
         <nav>
             <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" data-i18n="common.about">About Me</a></li>
+                <li><a href="index.html" data-i18n="common.home">Home</a></li>
             </ul>
         </nav>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="cn">中文</button>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <section id="other">
             <div class="section-header">
-                <h2><i class="fas fa-user-astronaut"></i> Beyond Data & Music</h2>
-                <p class="subtitle">My other worlds of passion and creativity</p>
+                <h2><i class="fas fa-user-astronaut"></i> <span data-i18n="other.title">Beyond Data & Music</span></h2>
+                <p class="subtitle" data-i18n="other.subtitle">My other worlds of passion and creativity</p>
             </div>
 
             <!-- Basketball Section -->
@@ -35,12 +40,12 @@
                     <i class="fas fa-basketball-ball"></i>
                 </div>
                 <div class="passion-content">
-                    <h3>Streetball Player</h3>
-                    <p>5 years of urban basketball — agility, teamwork, and improvisation are my game. Regular player on Paris courts with a competitive mindset.</p>
+                    <h3 data-i18n="other.passions.basketball.title">Streetball Player</h3>
+                    <p data-i18n="other.passions.basketball.desc">5 years of urban basketball — agility, teamwork, and improvisation are my game. Regular player on Paris courts with a competitive mindset.</p>
                     <div class="tags">
-                        <span class="tag">Pick-up games</span>
-                        <span class="tag">Paris spots</span>
-                        <span class="tag">Competitive</span>
+                        <span class="tag" data-i18n="other.passions.basketball.tags.1">Pick-up games</span>
+                        <span class="tag" data-i18n="other.passions.basketball.tags.2">Paris spots</span>
+                        <span class="tag" data-i18n="other.passions.basketball.tags.3">Competitive</span>
                     </div>
                 </div>
             </div>
@@ -51,12 +56,12 @@
                     <i class="fas fa-gamepad"></i>
                 </div>
                 <div class="passion-content">
-                    <h3>Competitive Gamer</h3>
-                    <p>Strategy and reflexes honed through esports titles — where analytics meet adrenaline. Focused on ranked play and team coordination.</p>
+                    <h3 data-i18n="other.passions.gaming.title">Competitive Gamer</h3>
+                    <p data-i18n="other.passions.gaming.desc">Strategy and reflexes honed through esports titles — where analytics meet adrenaline. Focused on ranked play and team coordination.</p>
                     <div class="tags">
-                        <span class="tag">MOBAs</span>
-                        <span class="tag">FPS</span>
-                        <span class="tag">Leaderboards</span>
+                        <span class="tag" data-i18n="other.passions.gaming.tags.1">MOBAs</span>
+                        <span class="tag" data-i18n="other.passions.gaming.tags.2">FPS</span>
+                        <span class="tag" data-i18n="other.passions.gaming.tags.3">Leaderboards</span>
                     </div>
                 </div>
             </div>
@@ -67,12 +72,12 @@
                     <i class="fas fa-plane"></i>
                 </div>
                 <div class="passion-content">
-                    <h3>Global Explorer</h3>
-                    <p>From New York's skyscrapers to China's ancient ruins — collecting cultural perspectives across continents. Next destination: Japan.</p>
+                    <h3 data-i18n="other.passions.travel.title">Global Explorer</h3>
+                    <p data-i18n="other.passions.travel.desc">From New York's skyscrapers to China's ancient ruins — collecting cultural perspectives across continents. Next destination: Japan.</p>
                     <div class="tags">
-                        <span class="tag">USA</span>
-                        <span class="tag">China</span>
-                        <span class="tag">Europe</span>
+                        <span class="tag" data-i18n="other.passions.travel.tags.1">USA</span>
+                        <span class="tag" data-i18n="other.passions.travel.tags.2">China</span>
+                        <span class="tag" data-i18n="other.passions.travel.tags.3">Europe</span>
                     </div>
                 </div>
             </div>
@@ -83,12 +88,12 @@
                     <i class="fas fa-user-check"></i>
                 </div>
                 <div class="passion-content">
-                    <h3>UX Contributor</h3>
-                    <p>Approved tester on UserTesting — shaping digital experiences through rigorous analysis. Bridging tech and human-centered design.</p>
+                    <h3 data-i18n="other.passions.ux.title">UX Contributor</h3>
+                    <p data-i18n="other.passions.ux.desc">Approved tester on UserTesting — shaping digital experiences through rigorous analysis. Bridging tech and human-centered design.</p>
                     <div class="tags">
-                        <span class="tag">UserTesting</span>
-                        <span class="tag">QA</span>
-                        <span class="tag">Feedback</span>
+                        <span class="tag" data-i18n="other.passions.ux.tags.1">UserTesting</span>
+                        <span class="tag" data-i18n="other.passions.ux.tags.2">QA</span>
+                        <span class="tag" data-i18n="other.passions.ux.tags.3">Feedback</span>
                     </div>
                 </div>
             </div>
@@ -98,14 +103,15 @@
     <!-- Footer -->
     <footer>
         <div class="contact-info">
-            <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
-            <p>Phone: 07.69.27.55.16</p>
+            <p><span data-i18n="footer.contact">Contact</span>: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+            <p><span data-i18n="footer.phone">Phone</span>: 07.69.27.55.16</p>
         </div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

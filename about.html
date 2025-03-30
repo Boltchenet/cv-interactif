@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Hugo MA</title>
+    <title data-i18n="titles.about">About Me - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,58 +15,63 @@
         </a>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" data-i18n="common.home">Home</a></li>
             </ul>
         </nav>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="cn">中文</button>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <section id="about">
             <div class="about-header">
-                <h2>About Me</h2>
+                <h2 data-i18n="about.title">About Me</h2>
                 <div class="title-decoration"></div>
             </div>
             
             <div class="about-content">
                 <div class="profile-section">
-                    <div class="profile-image"></div> <!-- Image ajoutée via CSS -->
+                    <div class="profile-image"></div>
                     <div class="profile-highlights">
                         <div class="highlight-card">
                             <i class="fas fa-graduation-cap"></i>
-                            <p>BUT Data Science</p>
+                            <p data-i18n="about.highlights.education">BUT Data Science</p>
                         </div>
                         <div class="highlight-card">
                             <i class="fas fa-code"></i>
-                            <p>Python | R | SQL</p>
+                            <p data-i18n="about.highlights.languages">Python | R | SQL</p>
                         </div>
                         <div class="highlight-card">
                             <i class="fas fa-music"></i>
-                            <p>Musician</p>
+                            <p data-i18n="about.highlights.musician">Musician</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="about-text">
                     <div class="text-block">
-                        <h3><i class="fas fa-user"></i> Who I Am</h3>
-                        <p>
+                        <h3><i class="fas fa-user"></i> <span data-i18n="about.sections.who.title">Who I Am</span></h3>
+                        <p data-i18n="about.sections.who.content">
                             Hi, I'm Hugo MA, a first-year student in the Bachelor of Technology (B.U.T.) in Data Science. 
                             Passionate about data analysis and creative problem-solving.
                         </p>
                     </div>
                     
                     <div class="text-block">
-                        <h3><i class="fas fa-lightbulb"></i> My Vision</h3>
-                        <p>
+                        <h3><i class="fas fa-lightbulb"></i> <span data-i18n="about.sections.vision.title">My Vision</span></h3>
+                        <p data-i18n="about.sections.vision.content">
                             This website showcases how AI tools can empower beginners to create professional projects.
                             Built with ChatGPT and DeepSeek, it's proof that technology can accelerate learning.
                         </p>
                     </div>
                     
                     <div class="text-block">
-                        <h3><i class="fas fa-rocket"></i> My Goals</h3>
-                        <p>
+                        <h3><i class="fas fa-rocket"></i> <span data-i18n="about.sections.goals.title">My Goals</span></h3>
+                        <p data-i18n="about.sections.goals.content">
                             Combine data skills with creative thinking to develop innovative solutions.
                             Continuously learn and adapt to new technologies in our fast-evolving digital world.
                         </p>
@@ -79,14 +84,15 @@
     <!-- Footer -->
     <footer>
         <div class="contact-info">
-            <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
-            <p>Phone: 07.69.27.55.16</p>
+            <p><span data-i18n="footer.contact">Contact</span>: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+            <p><span data-i18n="footer.phone">Phone</span>: 07.69.27.55.16</p>
         </div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

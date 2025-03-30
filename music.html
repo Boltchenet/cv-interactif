@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Musical World - Hugo MA</title>
+    <title data-i18n="titles.music">Musical World - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -15,17 +15,22 @@
         </a>
         <nav>
             <ul>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" data-i18n="common.about">About Me</a></li>
+                <li><a href="index.html" data-i18n="common.home">Home</a></li>
             </ul>
         </nav>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="cn">中文</button>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
         <section id="music">
             <div class="music-header">
-                <h2><i class="fas fa-music"></i> My Piano Journey</h2>
+                <h2><i class="fas fa-music"></i> <span data-i18n="music.title">My Piano Journey</span></h2>
                 <div class="piano-keys"></div>
             </div>
 
@@ -34,8 +39,8 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2009 - Piano Beginnings</h3>
-                        <p>Started learning at age 6 with private teacher Mrs Liu</p>
+                        <h3 data-i18n="music.timeline.2009.title">2009 - Piano Beginnings</h3>
+                        <p data-i18n="music.timeline.2009.desc">Started learning at age 6 with private teacher Mrs Liu</p>
                     </div>
                 </div>
 
@@ -43,8 +48,8 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2015 - Steinway Competition</h3>
-                        <p>Participated in prestigious piano competitions</p>
+                        <h3 data-i18n="music.timeline.2015.title">2015 - Steinway Competition</h3>
+                        <p data-i18n="music.timeline.2015.desc">Participated in prestigious piano competitions</p>
                     </div>
                 </div>
 
@@ -52,8 +57,8 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2021 - Cycle 3 Completion</h3>
-                        <p>Reached advanced level before pursuing other paths</p>
+                        <h3 data-i18n="music.timeline.2021.title">2021 - Cycle 3 Completion</h3>
+                        <p data-i18n="music.timeline.2021.desc">Reached advanced level before pursuing other paths</p>
                     </div>
                 </div>
 
@@ -61,8 +66,8 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <h3>2023 - Composition Era</h3>
-                        <p>Transitioned to music composition using FL Studio</p>
+                        <h3 data-i18n="music.timeline.2023.title">2023 - Composition Era</h3>
+                        <p data-i18n="music.timeline.2023.desc">Transitioned to music composition using FL Studio</p>
                     </div>
                 </div>
             </div>
@@ -73,8 +78,8 @@
                     <div class="skill-icon" style="background-color: #ff6b6b;">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>Romantic Style</h3>
-                    <p>Specializing in emotional and expressive pieces</p>
+                    <h3 data-i18n="music.skills.style.title">Romantic Style</h3>
+                    <p data-i18n="music.skills.style.desc">Specializing in emotional and expressive pieces</p>
                 </div>
 
                 <!-- Anime -->
@@ -82,8 +87,8 @@
                     <div class="skill-icon" style="background-color: #4ecdc4;">
                         <i class="fas fa-tv"></i>
                     </div>
-                    <h3>Anime Music</h3>
-                    <p>Adapting Japanese anime soundtracks</p>
+                    <h3 data-i18n="music.skills.anime.title">Anime Music</h3>
+                    <p data-i18n="music.skills.anime.desc">Adapting Japanese anime soundtracks</p>
                 </div>
 
                 <!-- Composition -->
@@ -91,18 +96,18 @@
                     <div class="skill-icon" style="background-color: #ff9f1c;">
                         <i class="fas fa-sliders-h"></i>
                     </div>
-                    <h3>Composition</h3>
-                    <p>Creating original music with FL Studio</p>
+                    <h3 data-i18n="music.skills.composition.title">Composition</h3>
+                    <p data-i18n="music.skills.composition.desc">Creating original music with FL Studio</p>
                 </div>
             </div>
 
             <div class="current-projects">
-                <h3><i class="fas fa-star"></i> Current Focus</h3>
-                <p>Developing original compositions blending:</p>
+                <h3><i class="fas fa-star"></i> <span data-i18n="music.projects.title">Current Focus</span></h3>
+                <p data-i18n="music.projects.subtitle">Developing original compositions blending:</p>
                 <ul>
-                    <li><i class="fas fa-check"></i> Romantic harmonies</li>
-                    <li><i class="fas fa-check"></i> Cinematic atmospheres</li>
-                    <li><i class="fas fa-check"></i> Anime influences</li>
+                    <li><i class="fas fa-check"></i> <span data-i18n="music.projects.list.1">Romantic harmonies</span></li>
+                    <li><i class="fas fa-check"></i> <span data-i18n="music.projects.list.2">Cinematic atmospheres</span></li>
+                    <li><i class="fas fa-check"></i> <span data-i18n="music.projects.list.3">Anime influences</span></li>
                 </ul>
             </div>
         </section>
@@ -111,14 +116,15 @@
     <!-- Footer -->
     <footer>
         <div class="contact-info">
-            <p>Contact: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
-            <p>Phone: 07.69.27.55.16</p>
+            <p><span data-i18n="footer.contact">Contact</span>: <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+            <p><span data-i18n="footer.phone">Phone</span>: 07.69.27.55.16</p>
         </div>
         <div class="social-links">
             <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
