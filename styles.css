@@ -1321,6 +1321,8 @@ body:lang(cn) {
     }
 }
 
+/* ... [le reste du code CSS reste inchangé] ... */
+
 /* Notification de développement */
 .dev-notification {
     position: fixed;
@@ -1359,11 +1361,27 @@ body:lang(cn) {
     margin-bottom: 10px;
     z-index: 10000;
     pointer-events: none;
+    max-width: 250px;
+    width: max-content;
+    white-space: normal;
+    word-wrap: break-word;
 }
 
-/* Animation de pulsation */
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
+/* Positionnement alternatif quand près du bord droit */
+.dev-notification:hover .dev-tooltip {
+    left: auto;
+    right: 0;
+    transform: none;
 }
+
+/* Positionnement alternatif quand près du bord inférieur */
+@media (max-width: 480px) {
+    .dev-tooltip {
+        bottom: auto;
+        top: 100%;
+        left: 0;
+        transform: none;
+    }
+}
+
+/* ... [le reste du code CSS reste inchangé] ... */
