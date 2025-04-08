@@ -45,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         const tooltip = document.createElement('div');
         tooltip.className = 'dev-tooltip';
         tooltip.textContent = tooltipText;
+        tooltip.style.left = 'auto';
+        tooltip.style.right = '0';
         notif.appendChild(tooltip);
         
         // Show/hide tooltip on hover
