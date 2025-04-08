@@ -8,40 +8,40 @@ const translations = {
     },
     index: {
         welcome: { en: "Welcome to My Interactive CV", fr: "Bienvenue sur mon CV interactif", cn: "欢迎来到我的互动简历" },
-        subtitle: { en: "Data Enthusiast | Music Lover | Creative Thinker", fr: "Data Scientist | Musicien | Esprit Créatif", cn: "数据爱好者 | 音乐爱好者 | 创意思考者" },
+        subtitle: { en: "Data Enthusiast | Music Lover | Creative Thinker", fr: "Data Scientist | Musicien | Créatif", cn: "数据爱好者 | 音乐爱好者 | 创意思考者" },
         explore: { en: "Explore More", fr: "Explorer", cn: "探索更多" }
     },
     categories: {
         title: { en: "Explore My Universe", fr: "Explorez mon univers", cn: "探索我的世界" },
-        subtitle: { en: "Discover my different areas of expertise", fr: "Découvrez mes différents domaines d'expertise", cn: "发现我的不同专业领域" }
+        subtitle: { en: "Discover my different areas of expertise", fr: "Découvrez mes compétences", cn: "发现我的不同专业领域" }
     },
     cards: {
         data: {
             title: { en: "Data Science", fr: "Science des données", cn: "数据科学" },
-            button: { en: "View Projects", fr: "Voir projets", cn: "查看项目" },
+            button: { en: "View Projects", fr: "Voir mes projets", cn: "查看项目" },
             skills: {
                 languages: { en: "Languages", fr: "Langages", cn: "编程语言" },
                 languages_desc: { en: "Python, R, SQL and more", fr: "Python, R, SQL et plus", cn: "Python, R, SQL 等" },
                 software: { en: "Software", fr: "Logiciels", cn: "软件" },
-                software_desc: { en: "Tools and software I use", fr: "Outils et logiciels que j'utilise", cn: "我使用的工具和软件" },
+                software_desc: { en: "Tools and software I use", fr: "Outils et logiciels maîtrisé ", cn: "我使用的工具和软件" },
                 stats: { en: "Statistics", fr: "Statistiques", cn: "统计" },
-                stats_desc: { en: "My statistical skills", fr: "Mes compétences statistiques", cn: "我的统计技能" },
+                stats_desc: { en: "My statistical skills", fr: "Mes compétences en statistique", cn: "我的统计技能" },
                 projects: { en: "Projects", fr: "Projets", cn: "项目" },
-                projects_desc: { en: "Explore my data projects", fr: "Découvrez mes projets data", cn: "探索我的数据项目" }
+                projects_desc: { en: "Explore my data projects", fr: "Découvrez mes projets en données", cn: "探索我的数据项目" }
             }
         },
         music: {
-            title: { en: "Musical World", fr: "Monde musical", cn: "音乐世界" },
+            title: { en: "Musical World", fr: "Ma Musique", cn: "音乐世界" },
             button: { en: "Discover More", fr: "Découvrir", cn: "发现更多" },
             skills: {
-                journey: { en: "Journey", fr: "Parcours", cn: "历程" },
-                journey_desc: { en: "My musical evolution", fr: "Mon évolution musicale", cn: "我的音乐发展历程" },
+                journey: { en: "Journey", fr: "Mon parcours", cn: "历程" },
+                journey_desc: { en: "My musical evolution", fr: "Mes compétences musicale", cn: "我的音乐发展历程" },
                 competitions: { en: "Competitions", fr: "Compétitions", cn: "比赛" },
                 competitions_desc: { en: "My performances", fr: "Mes performances", cn: "我的表演经历" },
                 instruments: { en: "Skills", fr: "Compétences", cn: "技能" },
                 instruments_desc: { en: "Instruments mastered", fr: "Instruments maîtrisés", cn: "掌握的乐器" },
                 portfolio: { en: "Portfolio", fr: "Portfolio", cn: "作品集" },
-                portfolio_desc: { en: "Listen to my work", fr: "Écoutez mon travail", cn: "聆听我的作品" }
+                portfolio_desc: { en: "Listen to my work", fr: "Découvrez mon travail", cn: "聆听我的作品" }
             }
         },
         other: {
@@ -51,9 +51,9 @@ const translations = {
                 writing: { en: "Author", fr: "Écriture", cn: "写作" },
                 writing_desc: { en: "My writing projects", fr: "Mes projets d'écriture", cn: "我的写作项目" },
                 gaming: { en: "Gaming", fr: "Jeux vidéo", cn: "电子游戏" },
-                gaming_desc: { en: "My gaming universe", fr: "Mon univers de gaming", cn: "我的游戏世界" },
+                gaming_desc: { en: "My gaming universe", fr: "Mon passions numériques", cn: "我的游戏世界" },
                 travel: { en: "Travel", fr: "Voyages", cn: "旅行" },
-                travel_desc: { en: "My adventures", fr: "Mes aventures", cn: "我的冒险经历" },
+                travel_desc: { en: "My adventures", fr: "Mes voyages", cn: "我的冒险经历" },
                 ideas: { en: "Ideas", fr: "Idées", cn: "创意" },
                 ideas_desc: { en: "Creative concepts", fr: "Concepts créatifs", cn: "创意概念" }
             }
@@ -79,7 +79,7 @@ const translations = {
             r: { en: "R", fr: "R", cn: "R" },
             r_desc: { en: "Statistical analysis", fr: "Analyse statistique", cn: "统计分析" },
             sql: { en: "SQL", fr: "SQL", cn: "SQL" },
-            sql_desc: { en: "Database queries", fr: "Requêtes bases de données", cn: "数据库查询" },
+            sql_desc: { en: "Database queries", fr: "Requêtes de bases de données", cn: "数据库查询" },
             software: { en: "Software", fr: "Logiciels", cn: "软件" },
             excel: { en: "Excel", fr: "Excel", cn: "Excel" },
             excel_desc: { en: "Advanced functions", fr: "Fonctions avancées", cn: "高级功能" },
@@ -103,29 +103,29 @@ const translations = {
             },
             social: {
                 title: { en: "Social Networks", fr: "Réseaux sociaux", cn: "社交网络" },
-                desc: { en: "Regulation impact study", fr: "Étude d'impact des régulations", cn: "监管影响研究" }
+                desc: { en: "Regulation impact study", fr: "Étude d'impact des régulations des réseaux sociaux", cn: "监管影响研究" }
             },
             happiness: {
                 title: { en: "Happiness", fr: "Bonheur", cn: "幸福指数" },
-                desc: { en: "Global trends analysis", fr: "Analyse des tendances mondiales", cn: "全球趋势分析" }
+                desc: { en: "Global trends analysis", fr: "Analyse des tendances mondiales sur le bonheur", cn: "全球趋势分析" }
             },
             survey: {
                 title: { en: "Cultural Survey", fr: "Enquête culturelle", cn: "文化调查" },
-                desc: { en: "Students habits investigation", fr: "Étude des habitudes étudiantes", cn: "学生习惯调查" }
+                desc: { en: "Students habits investigation", fr: "Étude des habitudes culturelles des étudiants", cn: "学生习惯调查" }
             }
         }
     },
     other: {
         title: { en: "Beyond Data & Music", fr: "Au-delà des données et de la musique", cn: "数据与音乐之外" },
-        subtitle: { en: "My other worlds of passion and creativity", fr: "Mes autres univers de passion et créativité", cn: "我的其他激情与创意世界" },
+        subtitle: { en: "My other worlds of passion and creativity", fr: "Mes autres passions et créativités", cn: "我的其他激情与创意世界" },
         passions: {
             basketball: {
                 title: { en: "Streetball Player", fr: "Joueur de Streetball", cn: "街头篮球运动员" },
                 desc: { en: "5 years of urban basketball — agility, teamwork, and improvisation are my game. Regular player on Paris courts with a competitive mindset.", 
-                       fr: "5 ans de basketball urbain — agilité, travail d'équipe et improvisation sont mes atouts. Joueur régulier sur les terrains parisiens avec un esprit compétitif.", 
+                       fr: "5 ans de basketball  — L'agilité, le travail en équipe et l'improvisation sont mes forces. Joueur assidu sur les terrains parisiens, avec un esprit compétitif.", 
                        cn: "5年街头篮球经验——敏捷、团队合作和即兴发挥是我的强项。经常在巴黎球场打球，具有竞争意识。" },
                 tags: {
-                    1: { en: "Pick-up games", fr: "Matchs improvisés", cn: "即兴比赛" },
+                    1: { en: "Pick-up games", fr: "Pick-up games", cn: "即兴比赛" },
                     2: { en: "Paris spots", fr: "Spots parisiens", cn: "巴黎球场" },
                     3: { en: "Competitive", fr: "Compétitif", cn: "竞技" }
                 }
@@ -133,7 +133,7 @@ const translations = {
             gaming: {
                 title: { en: "Competitive Gamer", fr: "Joueur Compétitif", cn: "竞技游戏玩家" },
                 desc: { en: "Strategy and reflexes honed through esports titles — where analytics meet adrenaline. Focused on ranked play and team coordination.", 
-                       fr: "Stratégie et réflexes affûtés à travers les jeux esportifs — où l'analyse rencontre l'adrénaline. Concentré sur le jeu classé et la coordination d'équipe.", 
+                       fr: "Stratégie et réflexes aiguisés à travers les jeux esportifs — où l'analyse se mêle à l'adrénaline. Focalisé sur le jeu compétitif et la coordination d'équipe.", 
                        cn: "通过电竞游戏磨练策略和反应能力——分析遇见激情。专注于排名赛和团队配合。" },
                 tags: {
                     1: { en: "MOBAs", fr: "MOBAs", cn: "多人在线战术竞技游戏" },
@@ -144,7 +144,7 @@ const translations = {
             travel: {
                 title: { en: "Global Explorer", fr: "Explorateur Mondial", cn: "全球探索者" },
                 desc: { en: "From New York's skyscrapers to China's ancient ruins — collecting cultural perspectives across continents. Next destination: Japan.", 
-                       fr: "Des gratte-ciel de New York aux ruines anciennes de la Chine — collection des perspectives culturelles à travers les continents. Prochaine destination : Japon.", 
+                       fr: "Des gratte-ciel de New York aux ruines antiques de Chine — une collection de perspectives culturelles à travers les continents. Prochaine escale : le Japon.", 
                        cn: "从纽约的摩天大楼到中国的古代遗址——收集跨大陆的文化视角。下一站：日本。" },
                 tags: {
                     1: { en: "USA", fr: "États-Unis", cn: "美国" },
@@ -155,7 +155,7 @@ const translations = {
             ux: {
                 title: { en: "UX Contributor", fr: "Contributeur UX", cn: "用户体验贡献者" },
                 desc: { en: "Approved tester on UserTesting — shaping digital experiences through rigorous analysis. Bridging tech and human-centered design.", 
-                       fr: "Testeur approuvé sur UserTesting — façonner des expériences digitales grâce à une analyse rigoureuse. Faire le lien entre technologie et design centré sur l'humain.", 
+                       fr: "Testeur certifié sur UserTesting — évaluer et améliorer les expériences utilisateurs grâce à une analyse détaillée. ", 
                        cn: "UserTesting认证测试员——通过严格分析塑造数字体验。连接技术与以人为本的设计。" },
                 tags: {
                     1: { en: "UserTesting", fr: "UserTesting", cn: "用户测试" },
@@ -169,21 +169,21 @@ const translations = {
         title: { en: "My Piano Journey", fr: "Mon Parcours Pianistique", cn: "我的钢琴之旅" },
         timeline: {
             "2009": {
-                title: { en: "2009 - Piano Beginnings", fr: "2009 - Débuts au piano", cn: "2009年 - 钢琴启蒙" },
+                title: { en: "2009 - Piano Beginnings", fr: "2011 - Débuts au piano", cn: "2011年 - 钢琴启蒙" },
                 desc: { en: "Started learning at age 6 with private teacher Mrs Liu", 
-                       fr: "Commence l'apprentissage à 6 ans avec le professeur particulier Mme Liu", 
+                       fr: "Débute le piano à 6 ans avec la professeur particulière Mme Liu.", 
                        cn: "6岁开始跟随刘老师学习钢琴" }
             },
             "2015": {
                 title: { en: "2015 - Steinway Competition", fr: "2015 - Concours Steinway", cn: "2015年 - 施坦威比赛" },
                 desc: { en: "Participated in prestigious piano competitions", 
-                       fr: "Participation à des concours de piano prestigieux", 
+                       fr: "Participation à des concours de piano ", 
                        cn: "参加知名钢琴比赛" }
             },
             "2021": {
                 title: { en: "2021 - Cycle 3 Completion", fr: "2021 - Fin de Cycle 3", cn: "2021年 - 完成第三阶段" },
                 desc: { en: "Reached advanced level before pursuing other paths", 
-                       fr: "Atteint un niveau avancé avant de poursuivre d'autres voies", 
+                       fr: "A atteint un niveau avancé avant de poursuivre d'autres voies", 
                        cn: "在转向其他领域前达到高级水平" }
             },
             "2023": {
@@ -237,7 +237,7 @@ const translations = {
                 title: { en: "Who I Am", fr: "Qui Je Suis", cn: "我是谁" },
                 content: { 
                     en: "Hi, I'm Hugo MA, a first-year student in the Bachelor of Technology (B.U.T.) in Data Science. Passionate about data analysis and creative problem-solving.",
-                    fr: "Bonjour, je suis Hugo MA, étudiant en première année de Bachelor Universitaire de Technologie (B.U.T.) en Science des Données. Passionné par l'analyse de données et la résolution créative de problèmes.",
+                    fr: "Bonjour, je suis Hugo MA, étudiant en première année de Bachelor Universitaire de Technologie (B.U.T.) en Sciences des Données. Spécialisé dans l'analyse des données et la résolution de problèmes.",
                     cn: "您好，我是Hugo MA，数据科学学士学位（B.U.T.）一年级学生。热衷于数据分析和创造性解决问题。"
                 }
             },
@@ -245,7 +245,7 @@ const translations = {
                 title: { en: "My Vision", fr: "Ma Vision", cn: "我的愿景" },
                 content: {
                     en: "This website showcases how AI tools can empower beginners to create professional projects. Built with ChatGPT and DeepSeek, it's proof that technology can accelerate learning.",
-                    fr: "Ce site démontre comment les outils d'IA permettent aux débutants de créer des projets professionnels. Construit avec ChatGPT et DeepSeek, c'est la preuve que la technologie peut accélérer l'apprentissage.",
+                    fr: "Ce site montre à quel point il est facile et rapide de réaliser des projets professionnels avec l'IA, même sans savoir coder. Créé avec ChatGPT et DeepSeek, il prouve que la technologie peut rendre l'apprentissage et la réalisation d'objectifs bien plus accessibles.",
                     cn: "本网站展示了AI工具如何帮助初学者创建专业项目。使用ChatGPT和DeepSeek构建，证明了技术可以加速学习。"
                 }
             },
@@ -253,7 +253,7 @@ const translations = {
                 title: { en: "My Goals", fr: "Mes Objectifs", cn: "我的目标" },
                 content: {
                     en: "Combine data skills with creative thinking to develop innovative solutions. Continuously learn and adapt to new technologies in our fast-evolving digital world.",
-                    fr: "Combiner compétences en données et pensée créative pour développer des solutions innovantes. Apprendre continuellement et s'adapter aux nouvelles technologies dans notre monde numérique en évolution rapide.",
+                    fr: "Pouvoir associer mes compétences en données et ma créativité pour trouver des solutions innovantes. Apprendre sans cesse et m'adapter aux nouvelles technologies dans ce monde numérique qui évolue rapidement.",
                     cn: "将数据技能与创造性思维相结合，开发创新解决方案。在我们快速发展的数字世界中不断学习并适应新技术。"
                 }
             }
