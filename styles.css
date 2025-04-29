@@ -1,3 +1,4 @@
+/* styles.css */
 /* General Styles */
 body {
     font-family: 'Arial', sans-serif;
@@ -579,32 +580,63 @@ body.music-page {
 }
 
 .piano-keys {
-    height: 80px;
-    background: linear-gradient(90deg, 
-        #000000 0%, #000000 8%, 
-        #ffffff 8%, #ffffff 10%, 
-        #000000 10%, #000000 18%,
-        #ffffff 18%, #ffffff 20%,
-        #000000 20%, #000000 28%,
-        #ffffff 28%, #ffffff 30%,
-        #000000 30%, #000000 38%,
-        #ffffff 38%, #ffffff 40%,
-        #000000 40%, #000000 48%,
-        #ffffff 48%, #ffffff 50%,
-        #000000 50%, #000000 58%,
-        #ffffff 58%, #ffffff 60%,
-        #000000 60%, #000000 68%,
-        #ffffff 68%, #ffffff 70%,
-        #000000 70%, #000000 78%,
-        #ffffff 78%, #ffffff 80%,
-        #000000 80%, #000000 88%,
-        #ffffff 88%, #ffffff 90%,
-        #000000 90%, #000000 98%,
-        #ffffff 98%, #ffffff 100%);
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 0 0 8px 8px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    height: 180px;
+    width: 600px;
+    margin: 20px auto;
+    position: relative;
+    background: #222;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    display: flex;
+}
+
+.white-key {
+    position: relative;
+    width: calc(100% / 14);
+    height: 160px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: background 0.1s;
+}
+
+.black-key {
+    position: absolute;
+    width: 30px;
+    height: 100px;
+    background: #111;
+    border-radius: 0 0 5px 5px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: background 0.1s;
+}
+
+.black-key:nth-child(1) { left: calc(100% / 14 * 0.7); }
+.black-key:nth-child(2) { left: calc(100% / 14 * 1.7); }
+.black-key:nth-child(3) { left: calc(100% / 14 * 3.7); }
+.black-key:nth-child(4) { left: calc(100% / 14 * 4.7); }
+.black-key:nth-child(5) { left: calc(100% / 14 * 5.7); }
+
+.white-key:active, .white-key.active {
+    background: #eee;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.black-key:active, .black-key.active {
+    background: #000;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+@keyframes keyPress {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+    100% { transform: translateY(0); }
+}
+
+.piano-keys:hover .white-key:nth-child(7) {
+    animation: keyPress 0.3s ease;
 }
 
 .timeline {
@@ -629,18 +661,21 @@ body.music-page {
     padding: 30px 0;
     position: relative;
     width: 50%;
+    box-sizing: border-box;
 }
 
 .timeline-item:nth-child(odd) {
     left: 0;
     text-align: right;
     padding-right: 70px;
+    padding-left: 0;
 }
 
 .timeline-item:nth-child(even) {
     left: 50%;
     text-align: left;
     padding-left: 70px;
+    padding-right: 0;
 }
 
 .timeline-dot {
@@ -649,7 +684,8 @@ body.music-page {
     background: #ffffff;
     border-radius: 50%;
     position: absolute;
-    top: 35px;
+    top: 50%;
+    transform: translateY(-50%);
     box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
     border: 2px solid #000000;
 }
@@ -1003,6 +1039,19 @@ body.other-page {
         width: 300px;
         min-height: 450px;
     }
+    
+    .piano-keys {
+        width: 500px;
+        height: 150px;
+    }
+    
+    .white-key {
+        height: 130px;
+    }
+    
+    .black-key {
+        height: 85px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1043,6 +1092,43 @@ body.other-page {
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .timeline::before {
+        left: 31px;
+    }
+    
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 15px;
+        left: 0 !important;
+        text-align: left !important;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-right: 15px;
+        padding-left: 70px;
+    }
+    
+    .timeline-dot {
+        left: 22px !important;
+        right: auto !important;
+    }
+    
+    .piano-keys {
+        width: 90%;
+        height: 120px;
+    }
+    
+    .white-key {
+        height: 100px;
+    }
+    
+    .black-key {
+        height: 70px;
+        width: 20px;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -1057,6 +1143,19 @@ body.other-page {
 
     .skills-column .card {
         min-height: auto;
+    }
+    
+    .piano-keys {
+        height: 100px;
+    }
+    
+    .white-key {
+        height: 80px;
+    }
+    
+    .black-key {
+        height: 50px;
+        width: 15px;
     }
 }
 
@@ -1133,23 +1232,6 @@ body.other-page {
         width: 100%;
         max-width: 350px;
         min-height: auto;
-    }
-}
-
-/* Timeline Mobile */
-@media screen and (max-width: 768px) {
-    .timeline::before {
-        left: 31px;
-    }
-    
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 15px;
-    }
-    
-    .timeline-dot {
-        left: 22px !important;
     }
 }
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="titles.data">Data Projects - Hugo MA</title>
+    <title data-i18n="titles.data">Data Science - Hugo MA</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -27,113 +27,106 @@
     </header>
 
     <!-- Main Content -->
-    <div class="container">
-        <!-- Left Column: Skills -->
-        <div class="left-column">
-            <h2 class="skills-title" data-i18n="data.skills_title">My Skills</h2>
-            
-            <div class="skills-grid">
-                <!-- Languages Section -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 data-i18n="data.skills.languages">Languages</h3>
-                    <ul>
-                        <li><strong data-i18n="data.skills.python">Python:</strong> <span data-i18n="data.skills.python_desc">Data analysis</span></li>
-                        <li><strong data-i18n="data.skills.r">R:</strong> <span data-i18n="data.skills.r_desc">Statistical analysis</span></li>
-                        <li><strong data-i18n="data.skills.sql">SQL:</strong> <span data-i18n="data.skills.sql_desc">Database queries</span></li>
-                    </ul>
+    <section id="data-universe">
+        <div class="categories-header">
+            <h2 data-i18n="data.title">Data Science Universe</h2>
+            <p class="subtitle" data-i18n="data.subtitle">Explore my multidimensional skills</p>
+        </div>
+        
+        <div class="card-container">
+            <!-- Programming Card -->
+            <div class="card cosmic-card" id="programming-card">
+                <div class="card-icon">
+                    <i class="fas fa-laptop-code"></i>
                 </div>
+                <h3 data-i18n="data.tabs.programming">Programming</h3>
+                <div class="sub-categories">
+                    <div class="sub-category">
+                        <h4><i class="fab fa-python"></i> <span data-i18n="data.programming.python_title">Python</span></h4>
+                        <p data-i18n="data.programming.python_desc">Data Analysis • Automation • ML</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-database"></i> <span data-i18n="data.programming.sql_title">SQL</span></h4>
+                        <p data-i18n="data.programming.sql_desc">Complex queries • Optimization</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-chart-bar"></i> <span data-i18n="data.programming.r_title">R</span></h4>
+                        <p data-i18n="data.programming.r_desc">Statistical analysis • Visualization</p>
+                    </div>
+                </div>
+                <a href="programming.html" class="cta-button pulse" data-i18n="common.see_details">See Details <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-                <!-- Software Section -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 data-i18n="data.skills.software">Software</h3>
-                    <ul>
-                        <li><strong data-i18n="data.skills.excel">Excel:</strong> <span data-i18n="data.skills.excel_desc">Advanced functions</span></li>
-                        <li><strong data-i18n="data.skills.powerbi">Power BI:</strong> <span data-i18n="data.skills.powerbi_desc">Dashboards</span></li>
-                        <li><strong data-i18n="data.skills.access">Access:</strong> <span data-i18n="data.skills.access_desc">Databases</span></li>
-                    </ul>
+            <!-- Software Card -->
+            <div class="card cosmic-card" id="software-card">
+                <div class="card-icon">
+                    <i class="fas fa-chart-pie"></i>
                 </div>
+                <h3 data-i18n="data.tabs.software">Software</h3>
+                <div class="sub-categories">
+                    <div class="sub-category">
+                        <h4><i class="fas fa-chart-line"></i> <span data-i18n="data.software.powerbi_title">Power BI</span></h4>
+                        <p data-i18n="data.software.powerbi_desc">Interactive dashboards • DAX</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-file-excel"></i> <span data-i18n="data.software.excel_title">Excel</span></h4>
+                        <p data-i18n="data.software.excel_desc">Advanced functions • Macros</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-database"></i> <span data-i18n="data.software.access_title">Access</span></h4>
+                        <p data-i18n="data.software.access_desc">Database management</p>
+                    </div>
+                </div>
+                <a href="software.html" class="cta-button pulse" data-i18n="common.see_details">See Details <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-                <!-- Statistics Section -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3 data-i18n="data.skills.stats">Statistics</h3>
-                    <ul>
-                        <li data-i18n="data.skills.stats1">Descriptive stats</li>
-                        <li data-i18n="data.skills.stats2">Inferential stats</li>
-                        <li data-i18n="data.skills.stats3">Data cleaning</li>
-                    </ul>
+            <!-- Statistics Card -->
+            <div class="card cosmic-card" id="stats-card">
+                <div class="card-icon">
+                    <i class="fas fa-chart-line"></i> <!-- Icône modifiée ici -->
                 </div>
+                <h3 data-i18n="data.tabs.stats">Statistics</h3>
+                <div class="sub-categories">
+                    <div class="sub-category">
+                        <h4><i class="fas fa-brain"></i> <span data-i18n="data.stats.ml_title">Machine Learning</span></h4>
+                        <p data-i18n="data.stats.ml_desc">Predictive models • Clustering</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-chart-line"></i> <span data-i18n="data.stats.inferential_title">Inferential</span></h4>
+                        <p data-i18n="data.stats.inferential_desc">Hypothesis testing • CI</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-broom"></i> <span data-i18n="data.stats.cleaning_title">Data Cleaning</span></h4>
+                        <p data-i18n="data.stats.cleaning_desc">Preprocessing • Normalization</p>
+                    </div>
+                </div>
+                <a href="statistics.html" class="cta-button pulse" data-i18n="common.see_details">See Details <i class="fas fa-arrow-right"></i></a>
+            </div>
 
-                <!-- Methods Section -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3 data-i18n="data.skills.methods">Methods</h3>
-                    <ul>
-                        <li data-i18n="data.skills.methods1">Data visualization</li>
-                        <li data-i18n="data.skills.methods2">Machine Learning</li>
-                        <li data-i18n="data.skills.methods3">Survey analysis</li>
-                    </ul>
+            <!-- Projects Card -->
+            <div class="card cosmic-card" id="projects-card">
+                <div class="card-icon">
+                    <i class="fas fa-project-diagram"></i>
                 </div>
+                <h3 data-i18n="data.tabs.projects">Projects</h3>
+                <div class="sub-categories">
+                    <div class="sub-category">
+                        <h4><i class="fas fa-music"></i> <span data-i18n="data.projects.music_title">Music Analysis</span></h4>
+                        <p data-i18n="data.projects.music_desc">Evolution from 1960 to today</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-network-wired"></i> <span data-i18n="data.projects.social_title">Social Networks</span></h4>
+                        <p data-i18n="data.projects.social_desc">Regulation impact study</p>
+                    </div>
+                    <div class="sub-category">
+                        <h4><i class="fas fa-smile"></i> <span data-i18n="data.projects.happiness_title">Happiness</span></h4>
+                        <p data-i18n="data.projects.happiness_desc">Global trends analysis</p>
+                    </div>
+                </div>
+                <a href="projects.html" class="cta-button pulse" data-i18n="common.see_details">See Details <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-
-        <!-- Right Column: Projects -->
-        <div class="right-column">
-            <h2 class="projects-title" data-i18n="data.projects_title">My Projects</h2>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-music"></i>
-                    </div>
-                    <h3 data-i18n="data.projects.music.title">Music Evolution</h3>
-                    <p data-i18n="data.projects.music.desc">Analysis from 1960 to today</p>
-                    <a href="Beige and Brown MInimalist Psychology Thesis Defense Presentation.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3 data-i18n="data.projects.social.title">Social Networks</h3>
-                    <p data-i18n="data.projects.social.desc">Regulation impact study</p>
-                    <a href="Présentation Basique et Simple Gouttes Pastel.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-smile"></i>
-                    </div>
-                    <h3 data-i18n="data.projects.happiness.title">Happiness</h3>
-                    <p data-i18n="data.projects.happiness.desc">Global trends analysis</p>
-                    <a href="PPT_SAE_Projet_21032025.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="card">
-                    <div class="card-icon">
-                        <i class="fas fa-poll"></i>
-                    </div>
-                    <h3 data-i18n="data.projects.survey.title">Cultural Survey</h3>
-                    <p data-i18n="data.projects.survey.desc">Students habits investigation</p>
-                    <a href="SAE Enquête.pdf" target="_blank" class="cta-button" data-i18n="common.view">View</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer>

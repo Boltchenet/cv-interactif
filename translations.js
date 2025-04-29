@@ -4,7 +4,8 @@ const translations = {
         contact: { en: "Contact", fr: "Contact", cn: "联系" },
         phone: { en: "Phone", fr: "Téléphone", cn: "电话" },
         view: { en: "View", fr: "Voir", cn: "查看" },
-        home: { en: "Home", fr: "Accueil", cn: "首页" }
+        home: { en: "Home", fr: "Accueil", cn: "首页" },
+        see_details: { en: "See Details", fr: "Voir détails", cn: "查看详情" }
     },
     index: {
         welcome: { en: "Welcome to My Interactive CV", fr: "Bienvenue sur mon CV interactif", cn: "欢迎来到我的互动简历" },
@@ -23,7 +24,7 @@ const translations = {
                 languages: { en: "Languages", fr: "Langages", cn: "编程语言" },
                 languages_desc: { en: "Python, R, SQL and more", fr: "Python, R, SQL et plus", cn: "Python, R, SQL 等" },
                 software: { en: "Software", fr: "Logiciels", cn: "软件" },
-                software_desc: { en: "Tools and software I use", fr: "Outils et logiciels maîtrisé ", cn: "我使用的工具和软件" },
+                software_desc: { en: "Tools and software I use", fr: "Outils et logiciels maîtrisé", cn: "我使用的工具和软件" },
                 stats: { en: "Statistics", fr: "Statistiques", cn: "统计" },
                 stats_desc: { en: "My statistical skills", fr: "Mes compétences en statistique", cn: "我的统计技能" },
                 projects: { en: "Projects", fr: "Projets", cn: "项目" },
@@ -67,52 +68,53 @@ const translations = {
         data: { en: "Data Projects", fr: "Projets Data", cn: "数据项目" },
         music: { en: "Musical World", fr: "Monde Musical", cn: "音乐世界" },
         other: { en: "Other Passions", fr: "Autres Passions", cn: "其他爱好" },
-        about: { en: "About Me", fr: "À Propos", cn: "关于我" }
+        about: { en: "About Me", fr: "À Propos", cn: "关于我" },
+        programming: { en: "Programming Skills", fr: "Compétences en Programmation", cn: "编程技能" },
+        software: { en: "Software Mastery", fr: "Maîtrise des Logiciels", cn: "软件掌握" },
+        statistics: { en: "Statistical Analysis", fr: "Analyses Statistiques", cn: "统计分析" }
     },
     data: {
-        skills_title: { en: "My Skills", fr: "Mes Compétences", cn: "我的技能" },
-        projects_title: { en: "My Projects", fr: "Mes Projets", cn: "我的项目" },
-        skills: {
-            languages: { en: "Languages", fr: "Langages", cn: "编程语言" },
-            python: { en: "Python", fr: "Python", cn: "Python" },
-            python_desc: { en: "Data analysis", fr: "Analyse de données", cn: "数据分析" },
-            r: { en: "R", fr: "R", cn: "R" },
-            r_desc: { en: "Statistical analysis", fr: "Analyse statistique", cn: "统计分析" },
-            sql: { en: "SQL", fr: "SQL", cn: "SQL" },
-            sql_desc: { en: "Database queries", fr: "Requêtes de bases de données", cn: "数据库查询" },
+        title: { en: "Data Science Universe", fr: "Univers Data Science", cn: "数据科学宇宙" },
+        subtitle: { en: "Explore my multidimensional skills", fr: "Explorez mes compétences multidimensionnelles", cn: "探索多维技能" },
+        tabs: {
+            programming: { en: "Programming", fr: "Programmation", cn: "编程" },
             software: { en: "Software", fr: "Logiciels", cn: "软件" },
-            excel: { en: "Excel", fr: "Excel", cn: "Excel" },
-            excel_desc: { en: "Advanced functions", fr: "Fonctions avancées", cn: "高级功能" },
-            powerbi: { en: "Power BI", fr: "Power BI", cn: "Power BI" },
-            powerbi_desc: { en: "Dashboards", fr: "Tableaux de bord", cn: "仪表板" },
-            access: { en: "Access", fr: "Access", cn: "Access" },
-            access_desc: { en: "Databases", fr: "Bases de données", cn: "数据库" },
             stats: { en: "Statistics", fr: "Statistiques", cn: "统计" },
-            stats1: { en: "Descriptive stats", fr: "Stats descriptives", cn: "描述性统计" },
-            stats2: { en: "Inferential stats", fr: "Stats inférentielles", cn: "推理性统计" },
-            stats3: { en: "Data cleaning", fr: "Nettoyage de données", cn: "数据清洗" },
-            methods: { en: "Methods", fr: "Méthodes", cn: "方法" },
-            methods1: { en: "Data visualization", fr: "Visualisation de données", cn: "数据可视化" },
-            methods2: { en: "Machine Learning", fr: "Machine Learning", cn: "机器学习" },
-            methods3: { en: "Survey analysis", fr: "Analyse d'enquêtes", cn: "调查分析" }
+            projects: { en: "Projects", fr: "Projets", cn: "项目" }
+        },
+        programming: {
+            python_title: { en: "Python", fr: "Python", cn: "Python" },
+            python_desc: { en: "Data Analysis • Automation • ML", fr: "Analyse • Automatisation • ML", cn: "数据分析·自动化·机器学习" },
+            sql_title: { en: "SQL", fr: "SQL", cn: "SQL" },
+            sql_desc: { en: "Complex queries • Optimization", fr: "Requêtes complexes • Optimisation", cn: "复杂查询·优化" },
+            r_title: { en: "R", fr: "R", cn: "R" },
+            r_desc: { en: "Statistical analysis • Visualization", fr: "Analyse statistique • Visualisation", cn: "统计分析·可视化" }
+        },
+        software: {
+            powerbi_title: { en: "Power BI", fr: "Power BI", cn: "Power BI" },
+            powerbi_desc: { en: "Interactive dashboards • DAX", fr: "Tableaux de bord interactifs • DAX", cn: "交互式仪表板·DAX" },
+            excel_title: { en: "Excel", fr: "Excel", cn: "Excel" },
+            excel_desc: { en: "Advanced functions • Macros", fr: "Fonctions avancées • Macros", cn: "高级功能·宏" },
+            access_title: { en: "Access", fr: "Access", cn: "Access" },
+            access_desc: { en: "Database management", fr: "Gestion de bases de données", cn: "数据库管理" }
+        },
+        stats: {
+            ml_title: { en: "Machine Learning", fr: "Machine Learning", cn: "机器学习" },
+            ml_desc: { en: "Predictive models • Clustering", fr: "Modèles prédictifs • Clustering", cn: "预测模型·聚类" },
+            inferential_title: { en: "Inferential", fr: "Inférentiel", cn: "推理统计" },
+            inferential_desc: { en: "Hypothesis testing • CI", fr: "Tests d'hypothèses • IC", cn: "假设检验·置信区间" },
+            cleaning_title: { en: "Data Cleaning", fr: "Nettoyage", cn: "数据清洗" },
+            cleaning_desc: { en: "Preprocessing • Normalization", fr: "Prétraitement • Normalisation", cn: "预处理·标准化" }
         },
         projects: {
-            music: {
-                title: { en: "Music Evolution", fr: "Évolution musicale", cn: "音乐演变" },
-                desc: { en: "Analysis from 1960 to today", fr: "Analyse de 1960 à aujourd'hui", cn: "1960年至今的分析" }
-            },
-            social: {
-                title: { en: "Social Networks", fr: "Réseaux sociaux", cn: "社交网络" },
-                desc: { en: "Regulation impact study", fr: "Étude d'impact des régulations des réseaux sociaux", cn: "监管影响研究" }
-            },
-            happiness: {
-                title: { en: "Happiness", fr: "Bonheur", cn: "幸福指数" },
-                desc: { en: "Global trends analysis", fr: "Analyse des tendances mondiales sur le bonheur", cn: "全球趋势分析" }
-            },
-            survey: {
-                title: { en: "Cultural Survey", fr: "Enquête culturelle", cn: "文化调查" },
-                desc: { en: "Students habits investigation", fr: "Étude des habitudes culturelles des étudiants", cn: "学生习惯调查" }
-            }
+            music_title: { en: "Music Analysis", fr: "Analyse Musicale", cn: "音乐分析" },
+            music_desc: { en: "Evolution from 1960 to today", fr: "Évolution de 1960 à aujourd'hui", cn: "1960年至今的演变" },
+            social_title: { en: "Social Networks", fr: "Réseaux Sociaux", cn: "社交网络" },
+            social_desc: { en: "Regulation impact study", fr: "Étude d'impact des régulations", cn: "监管影响研究" },
+            happiness_title: { en: "Happiness", fr: "Bonheur", cn: "幸福指数" },
+            happiness_desc: { en: "Global trends analysis", fr: "Analyse des tendances mondiales", cn: "全球趋势分析" },
+            survey_title: { en: "Cultural Survey", fr: "Enquête Culturelle", cn: "文化调查" },
+            survey_desc: { en: "Students habits investigation", fr: "Étude des habitudes étudiantes", cn: "学生习惯调查" }
         }
     },
     other: {
@@ -122,7 +124,7 @@ const translations = {
             basketball: {
                 title: { en: "Streetball Player", fr: "Joueur de Streetball", cn: "街头篮球运动员" },
                 desc: { en: "5 years of urban basketball — agility, teamwork, and improvisation are my game. Regular player on Paris courts with a competitive mindset.", 
-                       fr: "5 ans de basketball  — L'agilité, le travail en équipe et l'improvisation sont mes forces. Joueur assidu sur les terrains parisiens, avec un esprit compétitif.", 
+                       fr: "5 ans de basketball — L'agilité, le travail en équipe et l'improvisation sont mes forces. Joueur assidu sur les terrains parisiens, avec un esprit compétitif.", 
                        cn: "5年街头篮球经验——敏捷、团队合作和即兴发挥是我的强项。经常在巴黎球场打球，具有竞争意识。" },
                 tags: {
                     1: { en: "Pick-up games", fr: "Pick-up games", cn: "即兴比赛" },
@@ -155,7 +157,7 @@ const translations = {
             ux: {
                 title: { en: "UX Contributor", fr: "Contributeur UX", cn: "用户体验贡献者" },
                 desc: { en: "Approved tester on UserTesting — shaping digital experiences through rigorous analysis. Bridging tech and human-centered design.", 
-                       fr: "Testeur certifié sur UserTesting — évaluer et améliorer les expériences utilisateurs grâce à une analyse détaillée. ", 
+                       fr: "Testeur certifié sur UserTesting — évaluer et améliorer les expériences utilisateurs grâce à une analyse détaillée.", 
                        cn: "UserTesting认证测试员——通过严格分析塑造数字体验。连接技术与以人为本的设计。" },
                 tags: {
                     1: { en: "UserTesting", fr: "UserTesting", cn: "用户测试" },
@@ -177,7 +179,7 @@ const translations = {
             "2015": {
                 title: { en: "2015 - Steinway Competition", fr: "2015 - Concours Steinway", cn: "2015年 - 施坦威比赛" },
                 desc: { en: "Participated in prestigious piano competitions", 
-                       fr: "Participation à des concours de piano ", 
+                       fr: "Participation à des concours de piano", 
                        cn: "参加知名钢琴比赛" }
             },
             "2021": {
@@ -288,8 +290,6 @@ function applyLanguage(lang) {
     document.documentElement.lang = lang;
 }
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const preferredLang = localStorage.getItem('preferredLanguage') || 'en';
     applyLanguage(preferredLang);
@@ -297,4 +297,4 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.addEventListener('click', () => applyLanguage(btn.dataset.lang));
     });
-});  // <-- Ajoutez cette parenthèse fermante manquante
+});
