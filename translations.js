@@ -71,7 +71,10 @@ const translations = {
         about: { en: "About Me", fr: "À Propos", cn: "关于我" },
         programming: { en: "Programming Skills", fr: "Compétences en Programmation", cn: "编程技能" },
         software: { en: "Software Mastery", fr: "Maîtrise des Logiciels", cn: "软件掌握" },
-        statistics: { en: "Statistical Analysis", fr: "Analyses Statistiques", cn: "统计分析" }
+        statistics: { en: "Statistical Analysis", fr: "Analyses Statistiques", cn: "统计分析" },
+        python: { en: "Python", fr: "Python", cn: "Python" },
+        sql: { en: "SQL", fr: "SQL", cn: "SQL" },
+        r: { en: "R", fr: "R", cn: "R" }
     },
     data: {
         title: { en: "Data Science Universe", fr: "Univers Data Science", cn: "数据科学宇宙" },
@@ -115,6 +118,47 @@ const translations = {
             happiness_desc: { en: "Global trends analysis", fr: "Analyse des tendances mondiales", cn: "全球趋势分析" },
             survey_title: { en: "Cultural Survey", fr: "Enquête Culturelle", cn: "文化调查" },
             survey_desc: { en: "Students habits investigation", fr: "Étude des habitudes étudiantes", cn: "学生习惯调查" }
+        }
+    },
+    programming: {
+        subtitle: { 
+            en: "Technical expertise in development", 
+            fr: "Expertise technique en développement", 
+            cn: "开发技术专长" 
+        },
+        python: {
+            fundamentals: {
+                title: { en: "Fundamentals", fr: "Fondamentaux", cn: "基础" },
+                syntax: { en: "Python syntax & basic structures", fr: "Syntaxe Python & structures de base", cn: "Python语法和基础结构" },
+                operators: { en: "Logical/arithmetic operators", fr: "Opérateurs logiques/arithmétiques", cn: "逻辑/算术运算符" },
+                control: { en: "Control structures (if, for, while)", fr: "Structures de contrôle (if, for, while)", cn: "控制结构（条件判断，循环）" },
+                algorithms: { en: "Simple algorithms creation", fr: "Création d'algorithmes simples", cn: "简单算法创建" }
+            },
+            data_manipulation: {
+                title: { en: "Data Manipulation", fr: "Manipulation de données", cn: "数据处理" },
+                structures: { en: "Advanced data structures", fr: "Structures de données avancées", cn: "高级数据结构" },
+                operations: { en: "Sequence operations", fr: "Opérations sur les séquences", cn: "序列操作" },
+                modules: { en: "Math & Random modules", fr: "Modules Math & Random", cn: "数学和随机模块" },
+                visualization: { en: "Matplotlib visualization", fr: "Visualisation avec Matplotlib", cn: "Matplotlib可视化" }
+            }
+        },
+        sql: {
+            queries: {
+                title: { en: "Queries", fr: "Requêtes", cn: "查询" },
+                select: { en: "Complex SELECT queries", fr: "Requêtes SELECT complexes", cn: "复杂SELECT查询" },
+                functions: { en: "Date/numeric functions", fr: "Fonctions date/numériques", cn: "日期/数值函数" },
+                joins: { en: "JOIN operations", fr: "Opérations JOIN", cn: "JOIN操作" },
+                sets: { en: "Set operations", fr: "Opérations ensemblistes", cn: "集合操作" }
+            }
+        },
+        r: {
+            visualization: {
+                title: { en: "Visualization", fr: "Visualisation", cn: "可视化" },
+                ggplot: { en: "Advanced ggplot2", fr: "ggplot2 avancé", cn: "高级ggplot2" },
+                charts: { en: "Histograms & Boxplots", fr: "Histogrammes & Boîtes à moustaches", cn: "直方图和箱线图" },
+                themes: { en: "Theme customization", fr: "Personnalisation des thèmes", cn: "主题定制" },
+                time_series: { en: "Time series analysis", fr: "Analyse de séries temporelles", cn: "时间序列分析" }
+            }
         }
     },
     other: {
@@ -262,6 +306,8 @@ const translations = {
         }
     }
 };
+
+// ... rest of the translation functions remain unchanged ...
 
 function applyLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
