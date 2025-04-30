@@ -214,8 +214,8 @@ const translations = {
     music: {
         title: { en: "My Piano Journey", fr: "Mon Parcours Pianistique", cn: "我的钢琴之旅" },
         timeline: {
-            "2009": {
-                title: { en: "2009 - Piano Beginnings", fr: "2011 - Débuts au piano", cn: "2011年 - 钢琴启蒙" },
+            "2011": {
+                title: { en: "2011 - Piano Beginnings", fr: "2011 - Débuts au piano", cn: "2011年 - 钢琴启蒙" },
                 desc: { en: "Started learning at age 6 with private teacher Mrs Liu", 
                        fr: "Débute le piano à 6 ans avec la professeur particulière Mme Liu.", 
                        cn: "6岁开始跟随刘老师学习钢琴" }
