@@ -5,7 +5,10 @@ const translations = {
         phone: { en: "Phone", fr: "Téléphone", cn: "电话" },
         view: { en: "View", fr: "Voir", cn: "查看" },
         home: { en: "Home", fr: "Accueil", cn: "首页" },
-        see_details: { en: "See Details", fr: "Voir détails", cn: "查看详情" }
+        data: { en: "Data", fr: "Data", cn: "数据" },
+        see_details: { en: "See Details", fr: "Voir détails", cn: "查看详情" },
+        download: { en: "Download", fr: "Télécharger", cn: "下载" },
+        the_pdf: { en: "the PDF", fr: "le PDF", cn: "PDF" }
     },
     index: {
         welcome: { en: "Welcome to My Interactive CV", fr: "Bienvenue sur mon CV interactif", cn: "欢迎来到我的互动简历" },
@@ -72,6 +75,7 @@ const translations = {
         programming: { en: "Programming Skills", fr: "Compétences en Programmation", cn: "编程技能" },
         software: { en: "Software Mastery", fr: "Maîtrise des Logiciels", cn: "软件掌握" },
         statistics: { en: "Statistical Analysis", fr: "Analyses Statistiques", cn: "统计分析" },
+        projects: { en: "My Projects", fr: "Mes Projets", cn: "我的项目" },
         python: { en: "Python", fr: "Python", cn: "Python" },
         sql: { en: "SQL", fr: "SQL", cn: "SQL" },
         r: { en: "R", fr: "R", cn: "R" }
@@ -160,6 +164,47 @@ const translations = {
                 time_series: { en: "Time series analysis", fr: "Analyse de séries temporelles", cn: "时间序列分析" }
             }
         }
+    },
+    software: {
+        title: { en: "Software Skills", fr: "Compétences logicielles", cn: "软件技能" },
+        subtitle: { en: "My experience with main data tools", fr: "Mes expériences avec les principaux outils de data", cn: "我与主要数据工具的经验" },
+        
+        powerbi: {
+            1: { en: "Data connection (Excel, Access, Web...)", fr: "Connexion de données (Excel, Access, Web...)", cn: "数据连接 (Excel, Access, Web...)" },
+            2: { en: "Cleaning with Power Query", fr: "Nettoyage via Power Query", cn: "使用Power Query清洗数据" },
+            3: { en: "Modeling: columns and measures (DAX)", fr: "Modélisation : colonnes et mesures (DAX)", cn: "建模：列和度量 (DAX)" },
+            4: { en: "Functions: CALCULATE, DIVIDE, IF, SWITCH, etc.", fr: "Fonctions : CALCULATE, DIVIDE, IF, SWITCH, etc.", cn: "函数: CALCULATE, DIVIDE, IF, SWITCH等" },
+            5: { en: "Visualizations: charts, KPI, slicers", fr: "Visualisations : graphiques, KPI, slicers", cn: "可视化: 图表, KPI, 切片器" },
+            6: { en: "Interactive dashboards and reports", fr: "Dashboards et rapports interactifs", cn: "交互式仪表板和报告" }
+        },
+        
+        excel: {
+            1: { en: "Mastery of formulas: VLOOKUP, INDEX, MATCH, IF, etc.", fr: "Maîtrise des formules : RECHERCHEV, INDEX, EQUIV, SI, etc.", cn: "公式掌握: VLOOKUP, INDEX, MATCH, IF等" },
+            2: { en: "Filters, sorts, conditional formatting", fr: "Filtres, tris, mises en forme conditionnelles", cn: "筛选, 排序, 条件格式" },
+            3: { en: "Pivot tables creation", fr: "Création de tableaux croisés dynamiques (TCD)", cn: "创建数据透视表" },
+            4: { en: "Connection with Python: CSV, reading and visualizations", fr: "Connexion avec Python : CSV, lectures et visualisations", cn: "与Python连接: CSV, 读取和可视化" },
+            5: { en: "Using Python to create charts from Excel files", fr: "Utilisation de Python pour créer des graphiques à partir de fichiers Excel", cn: "使用Python从Excel文件创建图表" }
+        },
+        
+        access: {
+            1: { en: "Relational tables creation", fr: "Création de tables relationnelles", cn: "创建关系表" },
+            2: { en: "Simple and advanced SQL queries", fr: "Requêtes SQL simples et avancées", cn: "简单和高级SQL查询" },
+            3: { en: "Custom forms", fr: "Formulaires personnalisés", cn: "自定义表单" },
+            4: { en: "Export and connection with Power BI", fr: "Export et connexion avec Power BI", cn: "导出并与Power BI连接" },
+            5: { en: "Data analysis via cross queries", fr: "Analyse de données via requêtes croisées", cn: "通过交叉查询分析数据" }
+        },
+        
+        sas: {
+            1: { en: "Data import and management", fr: "Importation et gestion de données", cn: "数据导入和管理" },
+            2: { en: "Procedures: PROC MEANS, PROC FREQ, PROC REG", fr: "Procédures : PROC MEANS, PROC FREQ, PROC REG", cn: "过程: PROC MEANS, PROC FREQ, PROC REG" },
+            3: { en: "Variables creation, filters and conditions", fr: "Création de variables, filtres et conditions", cn: "变量创建, 筛选器和条件" },
+            4: { en: "Descriptive and regressive statistical analysis", fr: "Analyse statistique descriptive et régressive", cn: "描述性和回归统计分析" },
+            5: { en: "Using SAS Studio and SAS Base", fr: "Utilisation de SAS Studio et SAS Base", cn: "使用SAS Studio和SAS Base" }
+        }
+    },
+    projects: {
+        title: { en: "My Data Projects", fr: "Mes Projets Data", cn: "我的数据项目" },
+        subtitle: { en: "Download and explore my work", fr: "Téléchargez et explorez mon travail", cn: "下载并探索我的作品" }
     },
     other: {
         title: { en: "Beyond Data & Music", fr: "Au-delà des données et de la musique", cn: "数据与音乐之外" },
@@ -306,8 +351,6 @@ const translations = {
         }
     }
 };
-
-// ... rest of the translation functions remain unchanged ...
 
 function applyLanguage(lang) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
