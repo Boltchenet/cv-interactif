@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="titles.projects">Projets - Hugo MA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="projects-page">
+    <!-- Header -->
+    <header>
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+            <h1 id="logo">HUGO MA</h1>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html" data-i18n="common.about">About Me</a></li>
+                <li><a href="index.html" data-i18n="common.home">Home</a></li>
+                <li><a href="data.html" data-i18n="common.data">Data</a></li>
+            </ul>
+        </nav>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="fr">FR</button>
+            <button class="lang-btn" data-lang="cn">中文</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+   <section id="projects-section">
+    <div class="categories-header">
+        <h2 data-i18n="projects.title">My Data Projects</h2>
+        <p class="subtitle" data-i18n="projects.subtitle">Download and explore my work</p>
+    </div>
+
+    <div class="card-container">
+        <!-- Projet 1 : Musique -->
+        <div class="card cosmic-card project-card">
+            <div class="card-icon">
+                <i class="fas fa-music"></i>
+            </div>
+            <h3>Évolution des musiques de 1960 à aujourd'hui</h3>
+            <p class="project-desc">Analyse des tendances musicales à travers l’étude de K-Spotify</p>
+            <a href="docs/Beige and Brown MInimalist Psychology Thesis Defense Presentation.pdf" target="_blank" class="cta-button pulse" download>
+                Télécharger le PDF <i class="fas fa-download"></i>
+            </a>
+        </div>
+
+        <!-- Projet 2 : Bonheur -->
+        <div class="card cosmic-card project-card">
+            <div class="card-icon">
+                <i class="fas fa-smile"></i>
+            </div>
+            <h3>Analyse statistique du bonheur dans le monde</h3>
+            <p class="project-desc">Étude des indicateurs de bien-être à l’aide de logiciels comme R</p>
+            <a href="docs/PPT_SAE_Projet_21032025.pdf" target="_blank" class="cta-button pulse" download>
+                Télécharger le PDF <i class="fas fa-download"></i>
+            </a>
+        </div>
+
+        <!-- Projet 3 : Réseaux sociaux (en anglais) -->
+        <div class="card cosmic-card project-card">
+            <div class="card-icon">
+                <i class="fas fa-hashtag"></i>
+            </div>
+            <h3>Regulation of Social Media Access</h3>
+            <p class="project-desc">Presentation (in English) about youth and their access to social networks</p>
+            <a href="docs/Présentation Basique et Simple Gouttes Pastel.pdf" target="_blank" class="cta-button pulse" download>
+                Download the PDF <i class="fas fa-download"></i>
+            </a>
+        </div>
+
+        <!-- Projet 4 : Numérique et culture étudiante -->
+        <div class="card cosmic-card project-card">
+            <div class="card-icon">
+                <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Le numérique dans les pratiques culturelles étudiantes</h3>
+            <p class="project-desc">Enquête universitaire menée via Limesurvey auprès des étudiants</p>
+            <a href="docs/SAE Enquête.pdf" target="_blank" class="cta-button pulse" download>
+                Télécharger le PDF <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="contact-info">
+            <p><span data-i18n="footer.contact">Contact</span> : <a href="mailto:hugotianyi.ma@gmail.com">hugotianyi.ma@gmail.com</a></p>
+            <p><span data-i18n="footer.phone">Phone</span> : 07.69.27.55.16</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hugo-ma/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="projet.js"></script>
+</body>
+</html>
